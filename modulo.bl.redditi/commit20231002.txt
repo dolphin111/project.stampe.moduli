@@ -1,0 +1,201 @@
+commit 3f5acbddc3c3f8bc777870937cbca8c32561a61c
+Author: Tommaso Rosica <t.rosica@tdnet.it>
+Date:   Wed Apr 26 18:01:03 2023 +0200
+
+    Corretto l'allineamento verticale dei campi da 341 a 352 della sezione "Oneri detraibili"
+
+ .../printer/stampa2023/sintetico/Pag2.java         | 99 +++++++++++++---------
+ 1 file changed, 58 insertions(+), 41 deletions(-)
+
+commit 8029cbaadd19ef58fb6b10df92f07c520a030fca
+Author: Tommaso Rosica <t.rosica@tdnet.it>
+Date:   Fri Apr 21 14:29:37 2023 +0200
+
+    Corretto l'allineamento verticale dei campi 481, 482 e 483 alle caselle di testo prestampate
+
+ .../java/com/fideuram/printer/stampa2023/sintetico/Pag3.java  | 11 ++++++++---
+ 1 file changed, 8 insertions(+), 3 deletions(-)
+
+commit 835704667d141579d5b261a7c524565871b834f8
+Author: Tommaso Rosica <t.rosica@tdnet.it>
+Date:   Mon Apr 17 17:44:30 2023 +0200
+
+    Modificata condizione del titolo per escludere il primo invio
+
+ src/main/java/com/fideuram/printer/stampa2023/Lettera.java | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+commit 1f104714ee795fc041a2b16dfcb7f3b0a5d348ea
+Author: Tommaso Rosica <t.rosica@tdnet.it>
+Date:   Fri Apr 14 17:51:14 2023 +0200
+
+    Aggiunta logica per produrre l'annullamento (con apposito modello in PDF)
+
+ .../fideuram/printer/stampa2023/PrinterCu2023.java | 25 ++++++----
+ .../sintetico/PrinterCu2023Sintetico.java          | 53 ++++++++++++----------
+ 2 files changed, 46 insertions(+), 32 deletions(-)
+
+commit e3c497d62b44253136ffef565678ca4fec083fa2
+Author: Tommaso Rosica <t.rosica@tdnet.it>
+Date:   Fri Apr 14 17:50:29 2023 +0200
+
+    Aggiunta documentazione e logging
+
+ .../com/fideuram/printer/stampa2023/Lettera.java   | 10 ++++
+ .../java/com/fideuram/printer/stampa2023/Pag1.java | 35 +++++++-------
+ .../printer/stampa2023/sintetico/Pag3.java         | 54 +++++++++++-----------
+ .../java/com/fideuram/processo/FacadeCu2023.java   |  4 ++
+ 4 files changed, 58 insertions(+), 45 deletions(-)
+
+commit 1a3fec1b7ce3b51ddd472d06e9849811ba1d4351
+Author: Tommaso Rosica <t.rosica@tdnet.it>
+Date:   Wed Mar 1 17:28:58 2023 +0100
+
+    Resa condizionale (solo se non trattasi di rettifica) la visualizzazione del titolo ("Gentile signor") del destinatario della lettera
+
+ .../com/fideuram/printer/stampa2023/Lettera.java   | 28 ++++++++++++----------
+ 1 file changed, 15 insertions(+), 13 deletions(-)
+
+commit 26eee9c1fc5f8b9bac6ede32c38267de1077c729
+Author: Tommaso Rosica <t.rosica@tdnet.it>
+Date:   Wed Mar 1 12:15:51 2023 +0100
+
+    Caricamento iniziale con alcune mie modifiche per la CU 2023 (duplicazione di package)
+
+ .gitignore                                         |  43 ++
+ README.md                                          |   1 -
+ pom.xml                                            |  37 ++
+ .../java/com/fideuram/config/CudProperties.java    | 178 +++++++
+ .../com/fideuram/exception/Cu2015Exception.java    |  20 +
+ src/main/java/com/fideuram/printer/Cud.java        |  28 +
+ src/main/java/com/fideuram/printer/PaginaBase.java |  61 +++
+ .../com/fideuram/printer/stampa2015/Lettera.java   |  28 +
+ .../java/com/fideuram/printer/stampa2015/Pag1.java |  53 ++
+ .../java/com/fideuram/printer/stampa2015/Pag2.java | 137 +++++
+ .../java/com/fideuram/printer/stampa2015/Pag3.java | 114 ++++
+ .../java/com/fideuram/printer/stampa2015/Pag4.java | 159 ++++++
+ .../java/com/fideuram/printer/stampa2015/Pag5.java |  27 +
+ .../java/com/fideuram/printer/stampa2015/Pag6.java |  31 ++
+ .../printer/stampa2015/Pag_RiepilogoCU.java        |  36 ++
+ .../fideuram/printer/stampa2015/PrinterCu2015.java |  77 +++
+ .../com/fideuram/printer/stampa2016/Lettera.java   |  24 +
+ .../java/com/fideuram/printer/stampa2016/Pag1.java |  54 ++
+ .../fideuram/printer/stampa2016/PrinterCu2016.java |  42 ++
+ .../printer/stampa2016/ordinario/Pag2.java         | 105 ++++
+ .../printer/stampa2016/ordinario/Pag3.java         | 102 ++++
+ .../printer/stampa2016/ordinario/Pag4.java         | 111 ++++
+ .../printer/stampa2016/ordinario/Pag5.java         |  88 +++
+ .../printer/stampa2016/ordinario/Pag6.java         | 115 ++++
+ .../printer/stampa2016/ordinario/Pag7.java         | 126 +++++
+ .../printer/stampa2016/ordinario/Pag8.java         |  43 ++
+ .../printer/stampa2016/ordinario/Pag9.java         |  49 ++
+ .../ordinario/PrinterCu2016Ordinario.java          |  55 ++
+ .../printer/stampa2016/sintetico/Pag2.java         | 128 +++++
+ .../printer/stampa2016/sintetico/Pag3.java         | 125 +++++
+ .../printer/stampa2016/sintetico/Pag4.java         | 113 ++++
+ .../printer/stampa2016/sintetico/Pag6.java         |  46 ++
+ .../sintetico/PrinterCu2016Sintetico.java          |  40 ++
+ .../com/fideuram/printer/stampa2017/Lettera.java   |  41 ++
+ .../java/com/fideuram/printer/stampa2017/Pag1.java |  61 +++
+ .../fideuram/printer/stampa2017/PrinterCu2017.java |  35 ++
+ .../printer/stampa2017/sintetico/Pag2.java         | 133 +++++
+ .../printer/stampa2017/sintetico/Pag3.java         | 138 +++++
+ .../printer/stampa2017/sintetico/Pag4.java         | 157 ++++++
+ .../printer/stampa2017/sintetico/Pag6.java         |  52 ++
+ .../sintetico/PrinterCu2017Sintetico.java          |  40 ++
+ .../com/fideuram/printer/stampa2018/Lettera.java   |  38 ++
+ .../java/com/fideuram/printer/stampa2018/Pag1.java |  64 +++
+ .../fideuram/printer/stampa2018/PrinterCu2018.java |  34 ++
+ .../printer/stampa2018/sintetico/Pag2.java         | 133 +++++
+ .../printer/stampa2018/sintetico/Pag3.java         | 144 +++++
+ .../printer/stampa2018/sintetico/Pag4.java         | 158 ++++++
+ .../printer/stampa2018/sintetico/Pag6.java         |  51 ++
+ .../sintetico/PrinterCu2018Sintetico.java          |  44 ++
+ .../com/fideuram/printer/stampa2019/Lettera.java   |  61 +++
+ .../java/com/fideuram/printer/stampa2019/Pag1.java | 129 +++++
+ .../fideuram/printer/stampa2019/PrinterCu2019.java |  34 ++
+ .../printer/stampa2019/sintetico/Pag2.java         | 138 +++++
+ .../printer/stampa2019/sintetico/Pag3.java         | 148 ++++++
+ .../printer/stampa2019/sintetico/Pag4.java         | 162 ++++++
+ .../printer/stampa2019/sintetico/Pag6.java         |  55 ++
+ .../sintetico/PrinterCu2019Sintetico.java          |  56 ++
+ .../com/fideuram/printer/stampa2020/Lettera.java   |  64 +++
+ .../java/com/fideuram/printer/stampa2020/Pag1.java | 129 +++++
+ .../fideuram/printer/stampa2020/PrinterCu2020.java |  56 ++
+ .../printer/stampa2020/sintetico/Pag2.java         | 145 +++++
+ .../printer/stampa2020/sintetico/Pag3.java         | 180 +++++++
+ .../printer/stampa2020/sintetico/Pag4.java         | 208 ++++++++
+ .../printer/stampa2020/sintetico/Pag5.java         | 172 ++++++
+ .../printer/stampa2020/sintetico/Pag6.java         |  67 +++
+ .../printer/stampa2020/sintetico/Pag7.java         |  38 ++
+ .../printer/stampa2020/sintetico/Pag8.java         |  38 ++
+ .../sintetico/PrinterCu2020Sintetico.java          |  55 ++
+ .../com/fideuram/printer/stampa2021/Lettera.java   |  64 +++
+ .../java/com/fideuram/printer/stampa2021/Pag1.java | 129 +++++
+ .../fideuram/printer/stampa2021/PrinterCu2021.java |  56 ++
+ .../printer/stampa2021/sintetico/Pag2.java         | 156 ++++++
+ .../printer/stampa2021/sintetico/Pag3.java         | 180 +++++++
+ .../printer/stampa2021/sintetico/Pag4.java         | 215 ++++++++
+ .../printer/stampa2021/sintetico/Pag5.java         | 175 ++++++
+ .../printer/stampa2021/sintetico/Pag6.java         |  67 +++
+ .../printer/stampa2021/sintetico/Pag7.java         |  38 ++
+ .../printer/stampa2021/sintetico/Pag8.java         |  38 ++
+ .../sintetico/PrinterCu2021Sintetico.java          |  55 ++
+ .../com/fideuram/printer/stampa2022/Lettera.java   |  66 +++
+ .../java/com/fideuram/printer/stampa2022/Pag1.java | 130 +++++
+ .../fideuram/printer/stampa2022/PrinterCu2022.java |  56 ++
+ .../printer/stampa2022/sintetico/Pag2.java         | 166 ++++++
+ .../printer/stampa2022/sintetico/Pag3.java         | 174 ++++++
+ .../printer/stampa2022/sintetico/Pag4.java         | 215 ++++++++
+ .../printer/stampa2022/sintetico/Pag5.java         | 175 ++++++
+ .../printer/stampa2022/sintetico/Pag6.java         |  67 +++
+ .../printer/stampa2022/sintetico/Pag7.java         |  38 ++
+ .../printer/stampa2022/sintetico/Pag8.java         |  38 ++
+ .../sintetico/PrinterCu2022Sintetico.java          |  58 ++
+ .../com/fideuram/printer/stampa2023/Lettera.java   |  62 +++
+ .../java/com/fideuram/printer/stampa2023/Pag1.java | 128 +++++
+ .../fideuram/printer/stampa2023/PrinterCu2023.java |  56 ++
+ .../printer/stampa2023/sintetico/Pag2.java         | 166 ++++++
+ .../printer/stampa2023/sintetico/Pag3.java         | 172 ++++++
+ .../printer/stampa2023/sintetico/Pag4.java         | 215 ++++++++
+ .../printer/stampa2023/sintetico/Pag5.java         | 172 ++++++
+ .../printer/stampa2023/sintetico/Pag6.java         |  66 +++
+ .../printer/stampa2023/sintetico/Pag7.java         |  34 ++
+ .../printer/stampa2023/sintetico/Pag8.java         |  34 ++
+ .../sintetico/PrinterCu2023Sintetico.java          |  55 ++
+ .../java/com/fideuram/processo/FacadeCu2015.java   | 228 ++++++++
+ .../java/com/fideuram/processo/FacadeCu2016.java   |  64 +++
+ .../java/com/fideuram/processo/FacadeCu2017.java   |  64 +++
+ .../java/com/fideuram/processo/FacadeCu2018.java   |  61 +++
+ .../java/com/fideuram/processo/FacadeCu2019.java   |  64 +++
+ .../java/com/fideuram/processo/FacadeCu2020.java   |  74 +++
+ .../java/com/fideuram/processo/FacadeCu2021.java   |  76 +++
+ .../java/com/fideuram/processo/FacadeCu2022.java   |  83 +++
+ .../java/com/fideuram/processo/FacadeCu2023.java   |  68 +++
+ .../java/com/fideuram/prova/AnagraficaMock.java    | 116 ++++
+ src/main/java/com/fideuram/prova/Cud2015Mock.java  | 350 ++++++++++++
+ src/main/java/com/fideuram/prova/Cud2016Mock.java  | 587 +++++++++++++++++++++
+ src/main/java/com/fideuram/prova/Cud2017Mock.java  | 540 +++++++++++++++++++
+ src/main/java/com/fideuram/prova/Cud2018Mock.java  | 545 +++++++++++++++++++
+ src/main/java/com/fideuram/prova/Cud2019Mock.java  | 570 ++++++++++++++++++++
+ src/main/java/com/fideuram/prova/Cud2020Mock.java  | 570 ++++++++++++++++++++
+ src/main/java/com/fideuram/prova/Cud2021Mock.java  | 570 ++++++++++++++++++++
+ src/main/java/com/fideuram/prova/Cud2022Mock.java  | 570 ++++++++++++++++++++
+ src/main/java/com/fideuram/prova/Cud2023Mock.java  | 524 ++++++++++++++++++
+ src/main/java/com/fideuram/prova/PrinterCud.java   | 121 +++++
+ src/main/java/com/fideuram/proxy/Precottura.java   |  21 +
+ .../java/com/fideuram/proxy/Precottura2015.java    | 186 +++++++
+ .../java/com/fideuram/proxy/Precottura2016.java    | 143 +++++
+ .../fideuram/proxy/PrecotturaSintetico2016.java    | 138 +++++
+ src/test/java/Test2016.java                        |  51 ++
+ src/test/java/Test2017.java                        |  60 +++
+ 127 files changed, 15613 insertions(+), 1 deletion(-)
+
+commit c1453f5ab0144458aa064dc9487a4bf505c9b6fe
+Author: dolphin111 <dolphin111@tiscalinet.it>
+Date:   Wed Mar 1 12:06:31 2023 +0100
+
+    Initial commit
+
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)

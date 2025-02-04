@@ -1,0 +1,217 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.fideuram.stampe</groupId>
+        <artifactId>project.stampe.moduli</artifactId>
+        <version>5.5.0-RELEASE</version>
+        <!--relativePath>../project.stampe.moduli/pom.xml</relativePath-->
+    </parent>
+    <groupId>com.fideuram</groupId>
+    <artifactId>modulo.sys.clients.integration</artifactId>
+    <!-- version>5.0.1-RELEASE</version-->
+    <packaging>jar</packaging>
+
+    <name>modulo.sys.clients.integration</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.fideuram</groupId>
+            <artifactId>modulo.dto.stampe</artifactId>
+            <version>${project.build.rel}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.fideuram</groupId>
+            <artifactId>modulo.sys.stampe</artifactId>
+            <version>${project.build.rel}</version>
+        </dependency>
+        <!-- CLIENT CERTIFICATI DAL NUOVO GENERATORE-->
+        <!-- G.C.-20170126 Rigenerati client per JBOSS -->
+        <!-- 
+        <dependency>
+            <groupId>com.fideuram</groupId>
+            <artifactId>client.ws.puc.prospetti</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.fideuram</groupId>
+            <artifactId>client.ws.puc</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        -->
+        <!-- G.C.-20161228 Vecchio client crm -->
+       <!-- dependency>
+               <groupId>com.fideuram</groupId>
+               <artifactId>client.ws.crm</artifactId>
+               <version>1.1-SNAPSHOT</version>
+             </dependency-->
+        <dependency>
+            <groupId>com.fideuram</groupId>
+            <artifactId>client.ws.universo</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!-- G.C.-20170126 Rigenerato client per JBOSS -->
+        <!-- 
+        <dependency>
+            <groupId>com.fideuram</groupId>
+            <artifactId>client.ws.pdfconverter</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+         -->
+         
+        <dependency>
+            <groupId>com.fideuram</groupId>
+            <artifactId>client.ws.iside</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!-- G.C.-20170126 Rigenerato client per JBOSS -->
+        <!-- 
+        <dependency>
+            <groupId>com.fideuram</groupId>
+            <artifactId>client.ws.stampeFv</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        -->
+        <dependency>
+            <groupId>com.fideuram</groupId>
+            <artifactId>client.ws.grafici</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fideuram</groupId>
+            <artifactId>universo.ws</artifactId>
+            <version>1.0.0.0.0-RELEASE</version>
+        </dependency>
+        <!--<dependency>
+            <groupId>com.fideuram</groupId>
+            <artifactId>ws-converter2pdf</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            &lt;!&ndash;modulo converter di Alighiero Noschese, quello che se ne fotte dei parameteri in imput e converte in tutti i formati possibili e immajinabili&ndash;&gt;
+        </dependency>-->
+        <dependency>
+            <groupId>com.fideuram.stampe</groupId>
+            <artifactId>fidevita</artifactId>
+            <version>1.0-RELEASE</version>
+            <!-- <scope>provided</scope>-->
+        </dependency>
+
+        <dependency>
+            <groupId>com.thoughtworks.xstream</groupId>
+            <artifactId>xstream</artifactId>
+            <version>1.4.19</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>1.6.1</version>
+            <type>jar</type>
+            <scope>compile</scope>
+            <exclusions>               
+				<exclusion>
+				    <groupId>xml-apis</groupId>
+    				<artifactId>xml-apis</artifactId>
+				</exclusion>		                
+            </exclusions>            
+        </dependency>
+
+        <!-- quota dipendenze per client JMS-->
+        <dependency>
+            <groupId>javax.jms</groupId>
+            <artifactId>javax.jms-api</artifactId>
+            <version>2.0-b03</version>
+        </dependency>
+        <!-- 
+        <dependency>
+            <groupId>oracle.weblogic</groupId>
+            <artifactId>wlclient</artifactId>
+            <version>10.0.3-RELEASE</version>
+        </dependency>
+         -->
+         
+        <dependency>
+          <groupId>com.fideuram.client</groupId>
+               <artifactId>jboss.ws.crm.client</artifactId>
+               <version>0.0.1-SNAPSHOT</version>
+             </dependency>
+             
+             <dependency>
+          <groupId>com.fideuram.client</groupId>
+               <artifactId>jboss.ws.puc.client</artifactId>
+               <version>0.0.10-RELEASE</version>
+             </dependency>
+             
+             <dependency>
+          <groupId>com.fideuram.client</groupId>
+               <artifactId>jboss.ws.stampeFv.client</artifactId>
+               <version>0.0.1-SNAPSHOT</version>
+             </dependency>
+             
+             <!-- dependency>
+          <groupId>com.fideuram.client</groupId>
+               <artifactId>jboss.ws.puc.prospetti.client</artifactId>
+               <version>0.0.1-SNAPSHOT</version>
+             </dependency-->
+             
+             <dependency>
+            <groupId>com.fideuram.client</groupId>
+              <artifactId>prospetto</artifactId>
+              <version>1.5-SNAPSHOT</version>
+              <exclusions>
+                  <exclusion>
+                        <artifactId>jaxws-rt</artifactId>
+                        <groupId>com.sun.xml.ws</groupId>
+                  </exclusion>
+              </exclusions>
+        </dependency>
+             
+             
+             <!-- G.C.-20170419 Client rigerenato su converter esposto sulla fvbsappl082 (per i servizi "live" tipo Servizi FV) -->
+             <dependency>
+          <groupId>com.fideuram.client</groupId>
+               <artifactId>tomcat.ws.pdfconverter.client</artifactId>
+               <version>0.0.1-SNAPSHOT</version>
+             </dependency>
+             
+             <!-- G.C.-20170419 Client rigerenato su converter esposto sulla fvbsappl083 (per i servizi "batch" Gerend) -->
+             <dependency>
+          <groupId>com.fideuram.client</groupId>
+               <artifactId>tomcat.ws.batch.pdfconverter.client</artifactId>
+               <version>0.0.1-RELEASE</version>
+             </dependency>
+          		<dependency>  
+          <groupId>com.fideuram.client</groupId>
+  			<artifactId>jboss.ws.crm.client</artifactId>
+  			<version>0.0.1-RELEASE</version>
+      </dependency>   
+      
+      <dependency>
+		<groupId>com.fideuram.wsclient</groupId>
+		<artifactId>simulatori-riscatto</artifactId>
+		<version>0.0.1-RELEASE</version>
+		<exclusions>
+			<exclusion>
+				<groupId>com.sun.xml.ws</groupId>
+				<artifactId>jaxws-tools</artifactId>
+			</exclusion>
+		</exclusions>
+      </dependency>
+    </dependencies>
+    
+    <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <name>RepositoryProxy</name>
+            <url>http://fvaskalm01p.fidevita.bancafideuram.it:8081/repository/Releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <name>RepositoryProxy</name>
+            <url>http://fvaskalm01p.fidevita.bancafideuram.it:8081/repository/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+    
+</project>
+

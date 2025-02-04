@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dettaglioCoefficienteRenditaFrazionataPVO>
+ <fondoPensione>FIDEURAM MULTICOMPARTO</fondoPensione>
+ <prospettoLiquidativo>Prestazione pensionistica nella misura del 100%</prospettoLiquidativo>
+ <numeroPosizione>70002044712</numeroPosizione>
+ <aderente>ZANIBONI ANDREA</aderente>
+ <tipologiaAderente>Nuovo iscritto</tipologiaAderente>
+ <dataPrimaIscrizioneFormePensionisticheComplementari>1999-03-04T00:00:00+01:00</dataPrimaIscrizioneFormePensionisticheComplementari>
+ <dataAdesioneFondo>2008-05-13T00:00:00+02:00</dataAdesioneFondo>
+ <totaleContributiVersatiNettiFondoGenerale>56382.92</totaleContributiVersatiNettiFondoGenerale>
+ <numeroQuote>4261.447</numeroQuote>
+ <controvalore>74148.12</controvalore>
+ <valoreLordoPrestazionePensionistica100>74148.12</valoreLordoPrestazionePensionistica100>
+ <valoreLordoPrestazionePensionistica50>37074.06</valoreLordoPrestazionePensionistica50>
+ <renditaImmediata100>
+ <ammontarePosizioneIndividualeMaturata>74148.12</ammontarePosizioneIndividualeMaturata>
+ <coefficienteRenditaFrazionata>23.534</coefficienteRenditaFrazionata>
+ <rateazioneAnnua>3150.68</rateazioneAnnua>
+ <rateazioneMensile>3082.76</rateazioneMensile>
+ <rateazioneSemestrale>3087.13</rateazioneSemestrale>
+ <rateazioneTrimestrale>3084.94</rateazioneTrimestrale>
+ </renditaImmediata100>
+ <renditaImmediata50>
+ <ammontarePosizioneIndividualeMaturata>37074.06</ammontarePosizioneIndividualeMaturata>
+ <coefficienteRenditaFrazionata>23.534</coefficienteRenditaFrazionata>
+ <rateazioneAnnua>1575.34</rateazioneAnnua>
+ <rateazioneMensile>1541.38</rateazioneMensile>
+ <rateazioneSemestrale>1543.56</rateazioneSemestrale>
+ <rateazioneTrimestrale>1542.47</rateazioneTrimestrale>
+ </renditaImmediata50>
+ <renditaGarantita5Anni>
+ <ammontarePosizioneIndividualeMaturata>74148.12</ammontarePosizioneIndividualeMaturata>
+ <coefficienteRenditaFrazionata>24.086393</coefficienteRenditaFrazionata>
+ <rateazioneAnnua>3078.42</rateazioneAnnua>
+ <rateazioneMensile>3071.92</rateazioneMensile>
+ <rateazioneSemestrale>3076.25</rateazioneSemestrale>
+ <rateazioneTrimestrale>3074.08</rateazioneTrimestrale>
+ </renditaGarantita5Anni>
+ <renditaGarantita10Anni>
+ <ammontarePosizioneIndividualeMaturata>74148.12</ammontarePosizioneIndividualeMaturata>
+ <coefficienteRenditaFrazionata>24.378221</coefficienteRenditaFrazionata>
+ <rateazioneAnnua>3041.57</rateazioneAnnua>
+ <rateazioneMensile>3035.22</rateazioneMensile>
+ <rateazioneSemestrale>3039.45</rateazioneSemestrale>
+ <rateazioneTrimestrale>3037.34</rateazioneTrimestrale>
+ </renditaGarantita10Anni>
+ <ammontarePosizioneIndividualeMaturata>74148.12</ammontarePosizioneIndividualeMaturata>
+ <riscattabilita100>true</riscattabilita100>
+ <listaComparti>
+ <controvalore>3830.92</controvalore>
+ <dataNav>2017-11-30T00:00:00+01:00</dataNav>
+ <descrizioneComparto>FIDEURAM CRESCITA</descrizioneComparto>
+ <numeroQuote>237.10600</numeroQuote>
+ <valoreNav>16.15700</valoreNav>
+ </listaComparti>
+ <listaComparti>
+ <controvalore>68522.23</controvalore>
+ <dataNav>2017-11-30T00:00:00+01:00</dataNav>
+ <descrizioneComparto>FIDEURAM VALORE</descrizioneComparto>
+ <numeroQuote>3932.40900</numeroQuote>
+ <valoreNav>17.42500</valoreNav>
+ </listaComparti>
+ <listaComparti>
+ <controvalore>1794.97</controvalore>
+ <dataNav>2017-11-30T00:00:00+01:00</dataNav>
+ <descrizioneComparto>FIDEURAM EQUILIBRIO</descrizioneComparto>
+ <numeroQuote>91.93200</numeroQuote>
+ <valoreNav>19.52500</valoreNav>
+ </listaComparti>
+ <tabellaDemografica>A62_0</tabellaDemografica>
+ <dataNavRiferimento>2017-11-30T00:00:00+01:00</dataNavRiferimento>
+ <dataElaborazione>2017-12-19T15:27:17.685+01:00</dataElaborazione>
+</dettaglioCoefficienteRenditaFrazionataPVO>

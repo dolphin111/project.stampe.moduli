@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.fideuram</groupId>
+    <artifactId>modulo.dto.stampe</artifactId>
+    <version>5.5.0-RELEASE</version>
+    <packaging>jar</packaging>
+    <name>modulo.dto.stampe</name>
+
+    <dependencies>
+    <!-- 
+        <dependency>
+            <groupId>javax.xml</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.1</version>
+        </dependency>
+         -->
+        <dependency>
+            <groupId>fr.opensagres.xdocreport</groupId>
+            <artifactId>fr.opensagres.xdocreport.document</artifactId>
+            <version>0.9.7</version>
+        </dependency>
+    </dependencies>
+    <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <name>RepositoryProxy</name>
+            <url>http://fvaskalm01p.fidevita.bancafideuram.it:8081/repository/Releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <name>RepositoryProxy</name>
+            <url>http://fvaskalm01p.fidevita.bancafideuram.it:8081/repository/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+</project>

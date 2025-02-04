@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.fideuram.stampe</groupId>
+        <artifactId>project.stampe.moduli</artifactId>
+        <version>5.5.0-RELEASE</version>
+        <!--relativePath>../project.stampe.moduli/pom.xml</relativePath-->
+    </parent>
+    <groupId>com.fideuram</groupId>
+    <artifactId>modulo.bl.destinatari.lettera</artifactId>
+    <!-- version>5.0.1-RELEASE</version-->
+    <packaging>jar</packaging>
+    <name>modulo.bl.destinatari.lettera</name>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.fideuram</groupId>
+            <artifactId>modulo.sys.clients.integration</artifactId>
+            <version>${project.build.rel}</version>
+        </dependency>
+    <dependency>  
+          <groupId>com.fideuram.client</groupId>
+  			<artifactId>jboss.ws.crm.client</artifactId>
+  			<version>0.0.1-RELEASE</version>
+      </dependency>
+        
+    </dependencies>
+    <build>
+        <defaultGoal>install</defaultGoal>
+    </build>
+</project>

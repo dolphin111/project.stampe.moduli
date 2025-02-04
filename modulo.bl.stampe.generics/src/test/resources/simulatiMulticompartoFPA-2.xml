@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dettaglioCoefficienteRenditaFrazionataPVO>
+    <fondoPensione>FIDEURAM GARANZIA</fondoPensione>
+    <prospettoLiquidativo>Prestazione pensionistica nella misura del 100%</prospettoLiquidativo>
+    <numeroPosizione>70003490701</numeroPosizione>
+    <aderente>FAVA CARLO</aderente>
+    <tipologiaAderente>Nuovo iscritto</tipologiaAderente>
+    <dataPrimaIscrizioneFormePensionisticheComplementari>2006-12-28T00:00:00+01:00</dataPrimaIscrizioneFormePensionisticheComplementari>
+    <dataAdesioneFondo>2011-03-24T00:00:00+01:00</dataAdesioneFondo>
+    <totaleContributiVersatiNettiFondoGenerale>49467.7</totaleContributiVersatiNettiFondoGenerale>
+    <numeroQuote>2723.248</numeroQuote>
+    <valoreQuota>12.628</valoreQuota>
+    <controvalore>34389.18</controvalore>
+    <valoreLordoPrestazionePensionistica100>34389.18</valoreLordoPrestazionePensionistica100>
+    <valoreLordoPrestazionePensionistica50>17194.59</valoreLordoPrestazionePensionistica50>
+    <renditaImmediata100>
+        <ammontarePosizioneIndividualeMaturata>34389.18</ammontarePosizioneIndividualeMaturata>
+        <coefficienteRenditaFrazionata>18.1337</coefficienteRenditaFrazionata>
+        <rateazioneAnnua>1896.42</rateazioneAnnua>
+        <rateazioneMensile>1814.93</rateazioneMensile>
+        <rateazioneSemestrale>1836.13</rateazioneSemestrale>
+        <rateazioneTrimestrale>1823.35</rateazioneTrimestrale>
+    </renditaImmediata100>
+    <renditaImmediata50>
+        <ammontarePosizioneIndividualeMaturata>17194.59</ammontarePosizioneIndividualeMaturata>
+        <coefficienteRenditaFrazionata>18.1337</coefficienteRenditaFrazionata>
+        <rateazioneAnnua>948.21</rateazioneAnnua>
+        <rateazioneMensile>907.46</rateazioneMensile>
+        <rateazioneSemestrale>918.07</rateazioneSemestrale>
+        <rateazioneTrimestrale>911.68</rateazioneTrimestrale>
+    </renditaImmediata50>
+    <renditaGarantita5Anni>
+        <ammontarePosizioneIndividualeMaturata>34389.18</ammontarePosizioneIndividualeMaturata>
+        <coefficienteRenditaFrazionata>18.564247</coefficienteRenditaFrazionata>
+        <rateazioneAnnua>1852.44</rateazioneAnnua>
+        <rateazioneMensile>1807.12</rateazioneMensile>
+        <rateazioneSemestrale>1827.45</rateazioneSemestrale>
+        <rateazioneTrimestrale>1815.2</rateazioneTrimestrale>
+    </renditaGarantita5Anni>
+    <renditaGarantita10Anni>
+        <ammontarePosizioneIndividualeMaturata>34389.18</ammontarePosizioneIndividualeMaturata>
+        <coefficienteRenditaFrazionata>18.886302</coefficienteRenditaFrazionata>
+        <rateazioneAnnua>1820.85</rateazioneAnnua>
+        <rateazioneMensile>1779.31</rateazioneMensile>
+        <rateazioneSemestrale>1797.96</rateazioneSemestrale>
+        <rateazioneTrimestrale>1786.73</rateazioneTrimestrale>
+    </renditaGarantita10Anni>
+    <ammontarePosizioneIndividualeMaturata>34389.18</ammontarePosizioneIndividualeMaturata>
+    <riscattabilita100>true</riscattabilita100>
+    <tabellaDemografica>A62-1_50</tabellaDemografica>
+    <dataNavRiferimento>2017-11-30T00:00:00+01:00</dataNavRiferimento>
+    <dataElaborazione>2018-01-02T15:55:08.693+01:00</dataElaborazione>
+</dettaglioCoefficienteRenditaFrazionataPVO>

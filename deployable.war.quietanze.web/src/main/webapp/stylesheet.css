@@ -1,0 +1,1091 @@
+/********** Generali **********/
+HTML,BODY {
+	margin: 0px;
+	height: 100%;
+}
+
+FORM {
+	margin: 0px;
+	padding: 0px;
+}
+
+BODY {
+	background-color: transparent;
+	background-image: url("./css-images/sfondo_body.jpg");
+	background-repeat: repeat;
+	padding: 0px;
+	font-size: 10pt;
+	font-family: Arial, sans-serif;
+}
+
+image {
+	border: 0;
+}
+
+table.baseLayout {
+	height: 90%;
+	padding: 0px;
+	margin-top: 10px;
+}
+
+FIELDSET {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+label {
+	font-family: Arial;
+	font-size: 9pt;
+	font-weight: bold;
+	white-space: nowrap;
+	color: black;
+}
+
+.toggleMenuButton {
+	border: 1px #ABABAB solid;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 10px;
+	background-image: url("./images/pulsante_fid.gif");
+	width: 35px;
+}
+
+.iceCmdLnk {
+	color: gray;
+	font-weight: bold;
+}
+
+.iceCmdLnk:hover {
+	color: #F60;
+	text-decoration: underline;
+}
+
+.iceInpTxt, 
+.iceInpTxt-dis, 
+.iceInpSecrt, 
+.iceSelOneMnu, 
+.iceSelOneMnu-dis, 
+.iceSelInpDateInput, 
+.iceSelInpDateInput-dis, 
+.iceSelInpTxtTxt, 
+.iceSelInpTxtTxt-dis {
+	padding: 3px;
+	font-family: Arial;
+	font-size: 9pt;
+	border-radius: 5px;
+}
+
+.iceInpTxt, .iceInpSecrt, .iceSelOneMnu, .iceSelInpDateInput, .iceSelInpTxtTxt {
+	background-image: URL("./css-images/sfondo_input.png");
+	background-repeat: repeat-x;
+	background-position: center;
+	border: 1px #ABABAB solid;
+}
+
+.iceInpTxt-dis, .iceSelOneMnu-dis, iceSelInpDateInput-dis, .iceSelInpTxtTxt-dis {
+	background-color: #DEDEDE;
+	color: gray;
+	border: 1px #ABABAB dotted;
+}
+
+option {
+	background-color: #DEDEDE;
+}
+
+td.leftColumn {
+	width: 18%;
+	margin: 0px;
+	background-color: transparent;
+	height: 100%;
+	vertical-align: top;
+}
+
+td.rightColumn {
+	width: 82%;
+	margin: 0px;
+	background-color: transparent;
+	height: 100%;
+	vertical-align: top;
+}
+
+td.leftColumnClosed {
+	width: 1%;
+	margin: 0px;
+	background-color: transparent;
+	height: 100%;
+	vertical-align: top;
+}
+
+td.rightColumnClosed {
+	width: 99%;
+	margin: 0px;
+	background-color: transparent;
+	height: 100%;
+	vertical-align: top;
+}
+
+.alignLeft {
+	text-align: left;
+}
+
+.alignCenter {
+	text-align: center;
+}
+
+.alignRight {
+	text-align: right;
+}
+
+.alignTop {
+	vertical-align: top;
+}
+
+div.header {
+	width: 100%;
+	height: 40px;
+	display: block;
+	margin: 0;
+	background-image: url('./images/logo.jpg');
+	background-repeat: no-repeat;
+	background-position: left;
+	background-color: transparent;
+	font-family: Arial;
+	font-size: 18pt;
+	font-weight: bold;
+	text-align: center;
+}
+
+A:link, A:visited, A:active {
+	text-decoration: none;
+	font-size: 9pt;
+}
+
+/*
+	Stili per le popup
+*/
+.popupTitle {
+	text-align: left;
+}
+
+.popupButton {
+	text-align: right;
+	width:5%;
+	padding-right: 5px;
+}
+
+.icePnlPop, .icePnlTlTip {
+    padding: 0px;
+    z-index: 1000;
+    background: #F5F5F5;
+    color: #666666;
+}
+
+.icePnlPop {
+	max-width: 600px;
+	border-radius: 10px;
+}
+
+.popupHeaderGrid {
+	width: 100%;
+}
+
+.icePnlPopHdr, .icePnlTlTipHdr {
+    height: 2.0em;
+    font-weight: bold;
+    background: orange;
+    border-bottom: 1px solid #d9d9d9;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.icePnlPopHdr .iceOutTxt, .icePnlTlTipHdr .iceOutTxt {
+    padding: 4px;
+    text-align: center;
+    vertical-align: middle;
+    font: 11px tahoma;
+    color: #484848;
+    font-weight: bold;
+}
+
+.iceOutTxt {
+	font-size: 12px;
+}
+
+.icePnlTlTipBody {
+    padding: 10px;
+}
+
+.icePnlPopBody {
+	margin: 0px;
+	padding: 12px;
+	background-color: #cecece;
+	border: 5px solid #ffffff;
+	overflow: auto;
+	min-width: 350px;
+	border-radius: 0px 0px 10px 10px;
+}
+
+.icePnlPopFtr, .icePnlTlTipFtr {
+    float: right;
+    height: auto;
+    background-color: #DDDDDD;
+}
+
+.popupTopTextDrag, .popupTopTextModal {
+    margin: 2px 0 0 4px;
+    display: inline;
+    float: left;
+}
+
+.popupTopClose, .popupTopCloseModal {
+    vertical-align: middle;
+    margin: 4px;
+    display: inline;
+    float: right;
+}
+
+.popupContentText {
+    display: block;
+}
+
+.selezioneAnagraficaPopupBean {
+	
+}
+
+/*
+	Classi per i messaggi
+*/
+.errorMessage, .iceMsgError, .iceMsgsError {
+	color: red;
+	font-weight: bold;
+	font-family: Arial;
+}
+
+.infoMessage, .iceMsgInfo, .iceMsgsInfo {
+	color: blue;
+	font-weight: bold;
+	font-family: Arial;
+}
+
+.iceMsgWarn, .iceMsgsWarn {
+	color: #FF6611;
+	font-weight: bold;
+	font-family: Arial;
+}
+
+
+.displayContent {
+	margin: 0px;
+	padding: 0px;
+	overflow: auto;
+	background-color: #DEDEDE;
+}
+
+td.icePnlGrdCol1 {
+	padding: 0 0 0 5px;
+}
+
+td.icePnlGrdCol2 {
+	padding: 0px 5px 0px 0px;
+}
+
+.content {
+	background-color: transparent;
+	background-image: url("./css-images/sfondo_fondo.png");
+	background-repeat: repeat;
+    border: 1px solid #ABABAB;
+    border-radius: 0px 10px 10px 10px;
+    padding: 10px;
+    min-height: 561px;
+}
+
+.contentLeft {
+	background-color: #DEDEDE;
+    border-left: 1px solid #ABABAB;
+    border-top: 1px solid #ABABAB;
+    border-bottom: 1px solid #ABABAB;
+    border-radius: 10px 0px 0px 10px;
+    padding: 5px;
+}
+
+.contentFooter {
+	max-width: 790px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-left: 1px solid #ABABAB;
+	border-right: 1px solid #ABABAB;
+	border-bottom: 1px solid #ABABAB;
+	background-color: #DEDEDE;
+	padding-bottom: 5px;
+}
+
+div.intestazioneFunzione {
+	background-image: url("./css-images/sfondo_intestazione_funzione.png");
+	background-repeat: repeat-x;
+	background-position: center;
+	background-color: transparent;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	height: 24px;
+	padding: 3px;
+}
+
+div.intestazioneFunzione span {
+	color: white;
+	font-weight: bold;
+	margin: 10px;
+}
+
+.contenitoreFondo {
+	border-top: 1px solid #ABABAB;
+	border-right: 1px solid #666666;
+	border-left: 1px solid #ABABAB;
+	border-bottom: 1px solid #333333;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: transparent;
+	background-image: url("./css-images/sfondo_fondo.png");
+	background-repeat: repeat;
+}
+
+/********** Button **********/
+
+.buttonMenu, .buttonMenuLong, .buttonMenuLong220, .iceCmdBtn, .iceCmdBtn-dis, .icePnlCnfBtns input {
+	cursor: pointer;
+	font-family: Arial, sans-serif;
+	font-weight: bold !important;
+	font-size: 9pt;
+	color: #ffffff !important;
+	background-color: transparent;
+	margin: 5px;
+	height: 22px;
+	border: none !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.iceImageCmdBtn, .iceImageCmdBtn-dis {
+	height: auto;
+	margin: 1px;
+}
+
+.iceImageCmdBtn-dis {
+	cursor: not-allowed;
+}
+
+.buttonPopup {
+	border: 0;
+	margin: 5px, 0px, 0px, 0px;
+	padding: 0;
+	height: auto;
+	background: none;
+	border-radius: 0;
+	vertical-align: middle;
+}
+
+.buttonMenu {
+	background-image: url('./images/pulsante_fid.gif');
+	width: 120px;
+}
+
+.icePnlCnfBtns input {
+	background-image: url('./images/pulsante_fid.gif');
+	width: 120px;
+}
+
+.buttonMenuLong {
+	background-image: url('./images/pulsante_fid_long.gif');
+	width: 190px;
+}
+
+.buttonMenu220Long {
+	background-image: url('./images/pulsante_fid_220.gif');
+	width: 250px;
+}
+
+/********** DisplayTag *********/
+TABLE.dataTable {
+	font: 9pt Verdana, sans-serif;
+	border: 1px solid #c0c0c0;
+	background-color: #FFFFFF;
+}
+
+TABLE.dataTable tr.empty TD {
+	color: red;
+}
+
+TABLE.dataTable tr { /*background-color: #cecece;*/
+	/*cursor: pointer;*/
+}
+
+TABLE.dataTable tr.odd {
+	background-color: #C8E6F0;
+}
+
+TABLE.dataTable tr.even {
+	background-color: #E4F3F8;
+}
+
+TABLE.dataTable tbody tr.filter TD {
+	border-bottom: 1px;
+}
+
+TABLE.dataTable TH { /*padding: 1px 2px 2px 2px;*/
+	color: black;
+	vertical-align: top;
+	text-align: center;
+	font: 8pt Arial;
+	font-weight: bold;
+	border-right: 1px solid #c0c0c0;
+	background-color: #cecece;
+}
+
+TABLE.dataTable TH label {
+	font-size: 10pt;
+	font-family: Arial;
+	font-weight: bold;
+	display: block;
+}
+
+TABLE.dataTable TH.sortable {
+	height: 0px;
+}
+
+TABLE.dataTable TH.order1 A:link {
+	color: blue;
+	text-decoration: underline;
+}
+
+TABLE.dataTable TH.order2 A:link {
+	color: blue;
+}
+
+TABLE.dataTable TH.order1 A:hover {
+	color: #2684b3;
+	text-decoration: underline;
+}
+
+TABLE.dataTable TH.order2 A:hover {
+	color: #2684b3;
+}
+
+TABLE.dataTable TD {
+	empty-cells: show;
+	height: 20px;
+	vertical-align: middle;
+	color: #333333;
+	font: 8pt Tahoma, sans-serif;
+	font-weight: normal;
+	white-space: wrap;
+}
+
+TABLE.dataTable TD.highlight {
+	color: green;
+}
+
+TABLE.dataTable TD.hide SELECT {
+	visibility: hidden;
+}
+
+TABLE.dataTable TD.highlightLeft {
+	color: green;
+	text-align: left;
+}
+
+TABLE.dataTable TD.highlightLeftNoWrap {
+	color: green;
+	text-align: left;
+	white-space: nowrap;
+}
+
+TABLE.dataTable TD.left {
+	text-align: left;
+}
+
+TABLE.dataTable TD.leftNoWrap {
+	text-align: left;
+	white-space: nowrap;
+}
+
+TABLE.dataTable TD.right {
+	text-align: right;
+	white-space: nowrap;
+}
+
+TABLE.dataTable TD.rightBold {
+	text-align: right;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.iceSelOneRb {
+	padding-top: 0px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+.iceSelInpTxtList {
+	position: absolute;
+	display: block;
+	border-top: 1px solid #ABABAB;
+	border-right: 1px solid #666666;
+	border-left: 1px solid #ABABAB;
+	border-bottom: 1px solid #333333;
+}
+
+.iceSelInpTxtRow {
+	display: block;
+	background-color: #DEDEDE;
+	border-bottom: 1px solid #999999;
+	border-top: 1px solid #F7F7F7;
+	position: relative;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+}
+
+.iceSelInpTxtSelRow {
+	display: block;
+	background-color: #9b9b9b;
+	border-bottom: 1px solid #999999;
+	border-top: 1px solid #F7F7F7;
+	position: relative;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+}
+
+.modalitaInserimentoTxt {
+	font-weight: bold;
+	text-decoration: blink;
+}
+
+table.autocompleteTable {
+	width: 100%;
+}
+
+td.autocompleteDenProvincia {
+	width: 150px;
+}
+
+td.autocompleteDenComune {
+	width: 200px;
+}
+
+td.autocompleteSiglaProvincia {
+	width: 50px;
+}
+
+td.autocompleteDenStato {
+	width: 200px;
+}
+
+td.autocompleteSiglaStato {
+	width: 50px;
+}
+
+td.autocompleteCodiceAbi {
+	width: 38px;
+}
+
+td.autocompleteDescrizioneAbi {
+	
+}
+
+td.autocompleteCodiceCab {
+	width: 38px;
+}
+
+td.autocompleteDescrizioneCab {
+	
+}
+
+.iceMnuBar,.iceMnuBarVrt {
+	background-color: transparent;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+}
+
+.iceMnuBarItem,.iceMnuBarVrtItem {
+	border: none;
+	background-color: transparent;
+}
+
+.iceMnuBarItem {
+	display: block;
+	border: 1px #CDCDCD solid;
+	padding: 8px;
+	margin: 3px;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	width: 200px;
+}
+
+.iceMnuBarItem:hover {
+	background-color: #EEE;  
+}
+
+.iceMnuBarVrt {
+	width: auto;
+}
+
+.frmBackgroundTop span {
+	color: #FFFFFF;
+}
+
+/*
+ Calendar Component classes
+*/
+.iceSelInpDate { /* calendar outline & background color */
+	background-color: #FFFFFF;
+	border: 1px solid #ABABAB;
+}
+
+.iceSelInpDateIFrameFix,.iceIEIFrameFix {
+	z-index: -1;
+	position: absolute;
+	display: block;
+	filter: mask();
+}
+
+.iceSelInpDatePopup { /*    min-width: 172px; */
+	white-space: nowrap;
+}
+
+.iceSelInpDateInput {
+	width: 80px;
+	margin: 2px;
+}
+
+.iceSelInpDateOpenPopup {
+	display: inline;
+	text-decoration: none;
+	background-color: transparent;
+	background-image: url( "./css-images/cal_button.gif" );
+	background-repeat: no-repeat;
+	text-align: center;
+	border: none;
+	width: 16px;
+	height: 16px;
+}
+
+.iceSelInpDateClosePopup {
+	display: inline;
+	text-decoration: none;
+	background-color: transparent;
+	background-image: url( "./css-images/cal_off.gif" );
+	background-repeat: no-repeat;
+	text-align: center;
+	border: none;
+	width: 16px;
+	height: 16px;
+}
+
+.iceSelInpDateMonthYear,.iceSelInpDateTime {
+	background-color: #EFEFEF;
+	background-image: url( "./css-images/table_col_header.gif" );
+	background-position: bottom;
+	background-repeat: repeat-x;
+	font-weight: normal;
+	text-align: center;
+	color: #000000;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 4px;
+	padding-bottom: 4px; /*border-right:1px solid #CCCCCC;*/
+}
+
+.iceSelInpDateTime {
+	border-left: 1px solid #ABABAB;
+	border-bottom: 1px solid #ABABAB;
+	border-right: 1px solid #ABABAB;
+}
+
+.iceSelInpDateMoYrDropdown,.iceSelInpDateTimeDropDown {
+	background-color: #EFEFEF;
+	font-weight: bold;
+	color: #000000;
+}
+
+.iceSelInpDateMonthYear img {
+	border: none;
+}
+
+.iceSelInpDateMovePrev {
+	text-decoration: none;
+	display: inline;
+	background-color: transparent;
+	background-image: url( "./css-images/cal_arrow_left.gif" );
+	background-repeat: no-repeat;
+	text-align: center;
+	border: none;
+	width: 17px;
+	height: 16px;
+}
+
+.iceSelInpDateMoveNext {
+	text-decoration: none;
+	display: inline;
+	background-color: transparent;
+	background-image: url( "./css-images/cal_arrow_right.gif" );
+	background-repeat: no-repeat;
+	text-align: center;
+	border: none;
+	width: 17px;
+	height: 16px;
+}
+
+.iceSelInpDateWeek { /* the days of the week row */
+	font-weight: normal;
+	color: #2A6CC2;
+	text-align: center;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-bottom: 1px solid #000000;
+}
+
+/* set the look for the days of the week backgrounds */
+.iceSelInpDateDay,.iceSelInpDateCur {
+	/* the background & alignment for the days */
+	padding: 3px;
+	text-align: center;
+}
+
+.iceSelInpDateCur .iceOutTxt {
+	color: #FFFFFF;
+}
+
+/* now set the attributes for the numbers for each day of the week */
+.iceSelInpDateDay a { /* the day text */
+	text-decoration: none;
+	background-color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	color: #000000;
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	display: block;
+}
+
+.iceSelInpDateCur a {
+	text-decoration: none;
+	background-color: #2A6CC2;
+	border: 1px solid #2A6CC2;
+	color: #FFFFFF;
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	display: block;
+}
+
+/* now set the color attributes for the hover effect on non-current days */
+.iceSelInpDateDay a:hover { /* the day text */
+	text-decoration: none;
+	color: #2A6CC2;
+}
+
+.iceRowSelMouseOver {
+	background-color: #009490;
+	cursor: pointer;
+}
+
+/*
+----------- Panel Collapsible --------
+*/ /* opened accordion styles */
+.icePnlClpsbl,.icePnlClpsblHdr,.icePnlClpsblCnt {
+	
+}
+
+/* Closed */
+.icePnlClpsblColpsd,.icePnlClpsblColpsdHdr,.icePnlClpsblColpsdCnt {
+	
+}
+
+/* Open and disabled */
+.icePnlClpsbl-dis,.icePnlClpsblHdr-dis,.icePnlClpsblCnt-dis {
+	
+}
+
+/* Closed and disabled */
+.icePnlClpsblColpsd-dis,.icePnlClpsblColpsdHdr-dis,.icePnlClpsblColpsdCnt-dis
+	{
+	
+}
+
+/* common accordion headers */
+.icePnlClpsblHdr,.icePnlClpsblColpsdHdr {
+	background-image: url("./css-images/sfondo_intestazione_sezione.png");
+	background-repeat: repeat-x;
+	background-position: center;
+	background-color: transparent;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border: 1px #ABABAB solid;
+	height: 20px;
+	padding: 3px;
+	cursor: pointer;
+}
+
+.icePnlClpsblHdr .iceOutTxt,.icePnlClpsblColpsdHdr .iceOutTxt {
+	color: #FFF;
+	font-weight: bold;
+	margin: 10px;
+}
+
+.icePnlClpsbl {
+	margin-bottom: 10px;
+}
+
+.icePnlClpsblCnt,.icePnlClpsblColpsdCnt,.icePnlClpsblColpsdCnt-dis,.icePnlClpsblCnt-dis
+{
+	background-color: #EFEFEF;
+	border-left: 1px solid #ABABAB;
+	border-right: 1px solid #ABABAB;
+	border-bottom: 1px solid #ABABAB;
+	border-top: 0;
+	padding: 5px;
+	color: #000;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.icePnlClpsblHdr-dis,.icePnlClpsblColpsdHdr-dis {
+	background: #EFEFEF url( './css-images/table_col_header_dis.gif' )
+		repeat-x bottom;
+	font-weight: bold;
+	text-align: left;
+	color: #999;
+	border: 1px solid #CCCCCC;
+	border-bottom: none;
+	padding-left: 2px;
+	padding-right: 5px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	cursor: default;
+}
+
+.icePnlClpsblHdr-dis .iceOutTxt,.icePnlClpsblColpsdHdr-dis .iceOutTxt {
+	color: #999;
+}
+
+.icePnlClpsblColpsdCnt-dis,.icePnlClpsblCnt-dis,.icePnlClpsblColpsdCnt-dis .iceOutTxt,.icePnlClpsblCnt-dis .iceOutTxt
+	{
+	color: #999;
+}
+
+.iceGmp {
+	border-collapse: collapse;
+	border-spacing: 0px;
+	padding: 0px;
+}
+
+.iceGmpMapTd {
+	vertical-align: top;
+}
+
+.iceGmpMapTd div.gmap {
+	width: 300px;
+	height: 300px;
+}
+
+.iceInpRchTxt {
+	width: 100%;
+}
+
+/* panel divider */
+.icePnlDvr,.icePnlDvrHor {
+	width: 300px;
+	height: 300px;
+}
+
+.icePnlDvrCnt,.icePnlDvrHorCnt {
+	border: 1px solid #ABABAB;
+	/*width:100%; */
+	height: 100%;
+}
+
+.icePnlDvrFst,.icePnlDvrSnd {
+	height: 100%;
+	display: block;
+	float: left;
+	overflow: auto;
+}
+
+.icePnlDvrSpt {
+	width: 2px;
+	height: 100%;
+	display: inline;
+	background-color: #EFEFEF;
+	border-left: 1px solid #ABABAB;
+	border-right: 1px solid #ABABAB;
+	float: left;
+	cursor: e-resize;
+}
+
+.icePnlDvrHorFst,.icePnlDvrHorSnd {
+	width: 100%;
+	display: block;
+	overflow: auto;
+	display: block;
+}
+
+.icePnlDvrHorSpt {
+	width: 100%;
+	height: 2px;
+	background-color: #EFEFEF;
+	border-top: 1px solid #ABABAB;
+	border-bottom: 1px solid #ABABAB;
+	cursor: n-resize;
+}
+
+/*
+----------- PanelConfirmation ----------
+*/
+.icePnlCnf {
+	border-top: 1px solid #ABABAB;
+	border-right: 1px solid #ABABAB;
+	border-left: 1px solid #ABABAB;
+	border-bottom: 1px solid #ABABAB;
+	border-radius: 5px;
+	background-color: transparent;
+	padding: 0;
+	width: 300px;
+	z-index: 1000;
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.icePnlCnfHdr {
+	background-color: transparent;
+	background-image: url("./css-images/sfondo_intestazione_sezione.png");
+	background-position: top;
+	background-repeat: repeat-x;
+	height: auto;
+	color: #FFFFFF;
+	font-size: 1em;
+	font-weight: bold;
+	padding: 4px;
+	text-align: left;
+	vertical-align: middle;
+	border-radius: 5px 5px 0px 0px;
+}
+
+.icePnlCnfBody {
+	padding: 10px 10px 5px 10px;
+	background-color: #DDDDDD;
+	font-size: 1em;
+	font-weight: normal;
+}
+
+.icePnlCnfBtns {
+	background-color: #DDDDDD;
+	padding: 10px;
+	border-radius: 0px 0px 5px 5px;
+	text-align: center;
+	font-size: 1em;
+	font-weight: normal;
+}
+
+.decodificaLabel {
+	color: #F60;
+	font-weight: bold;
+}
+
+.errorImg{
+	width: 15px;
+	height: 15px;	
+}
+
+.readOnlyModeCnt {
+	background-color: #DEDEDE;
+}
+
+.createModeCnt {
+	background-color: #D0EECE;
+}
+
+.editModeCnt {
+	background-color: #94A9FF;
+}
+
+.draggablePanelSeries, .dropTarget {
+	overflow: auto;
+	border: 1px #DEDEDE solid;
+	background-color: white;
+}
+
+.draggablePanel {
+	z-index: 1000;
+	cursor: move;
+	height: 20px;
+	padding: 5px;
+	border: 1px #DEDEDe solid;
+	background-color: #EEEEEE;
+	background-image: url("./css-images/bullet.gif");
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+.dropTableButton {
+	cursor: pointer;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 9pt;
+	color: #000000;
+	background-color: white;
+	margin: 5px;
+	height: 22px;
+	border: 1px #DEDEDE solid;
+}
+
+.dropTableButton-dis {
+	cursor: not-allowed;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 9pt;
+	color: #ffffff;
+	background-color: gray;
+	margin: 5px;
+	height: 22px;
+	border: 1px #DEDEDE solid;
+}
+
+.dropTableButton:hover {
+	background-color: #F60;
+}
+
+.inputXS,.inputXS-dis {
+	width: 2em;
+}
+
+.inputS,.inputS-dis {
+	width: 6em;
+}
+
+.inputMS,.inputMS-dis {
+	width: 6em;
+}
+
+.inputM,.inputM-dis {
+	width: 10em;
+}
+
+.inputML,.inputML-dis {
+	width: 12em;
+}
+
+.inputL,.inputL-dis {
+	width: 15em;
+}
+
+.inputXL,.inputXL-dis {
+	width: 20em;
+}
+
+.inputXXL,.inputXXL-dis {
+	width: 25em;
+}

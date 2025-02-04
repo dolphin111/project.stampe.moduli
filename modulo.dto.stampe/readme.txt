@@ -1,0 +1,1 @@
+commit20231002.txt	Dettaglio dei commit effettuati in occasione del riversamento (del 02/10/2023) delle modifiche alla versione 5.0.6-RELEASE nella versione 5.4.4-RELEASE

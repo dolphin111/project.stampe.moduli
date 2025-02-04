@@ -1,0 +1,16 @@
+<jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.0">
+ 
+  <deployment>
+  	<exclusions>
+  	<!-- 
+    	<module name="org.hibernate"/>
+    	 --> <!-- 
+    	<module name="org.antlr"/>
+    	<module name="org.javassist"/>
+    	<module name="javax.xml.bind.api"/>
+    	<module name="com.sun.xml.bind"/>
+    	 -->
+   	</exclusions>
+  </deployment>
+  
+</jboss-deployment-structure>

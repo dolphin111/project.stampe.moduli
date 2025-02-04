@@ -1,0 +1,248 @@
+<model>
+    <lettera><flagOpzioni>no</flagOpzioni><reteVendita>BANCA FIDEURAM S.p.A.</reteVendita>
+        <citta>Roma</citta>
+        <data>23/10/2013</data>
+        <labelProtocollo>Prot. n.</labelProtocollo>
+        <protocollo>I/0074/13</protocollo>
+        <codiceIside></codiceIside>
+        <utente>lc</utente>
+        <oggetto>Polizza Financial Age Protection 2 n. :7689429</oggetto>
+        <testoLettera>     con la presente diamo riscontro alla sua comunicazione e, con riferimento alla polizza in oggetto, trasmettiamo in allegato quanto da lei richiesto.</testoLettera>
+        <testoIndirizzoLettera></testoIndirizzoLettera>
+        <tipoComunicazione>I</tipoComunicazione>
+        <indirizzoModificato>false</indirizzoModificato>
+        <denominazioneContraente>MAMMI ENZO</denominazioneContraente>
+        <tipoProponente>Cliente</tipoProponente>
+    </lettera>
+    <proponente class="com.fideuram.attori.bo.impl.Contraente">
+        <titolo>Gentile Signor</titolo>
+        <denominazione>MAMMI ENZO</denominazione>
+        <indirizzo>
+            <via>TRESSANO VIA CA&apos; DE FII 17</via>
+            <cap>42014</cap>
+            <citta>CASTELLARANO</citta>
+            <provincia>RE</provincia>
+            <modificato>false</modificato>
+        </indirizzo>
+        <dataNascita>06/11/1939</dataNascita>
+        <sesso>M</sesso>
+    </proponente>
+    <altro class="com.fideuram.attori.bo.impl.PrivateBanker">
+        <titolo>Gentile Signor</titolo>
+        <denominazione>TREVISI ELIGIO</denominazione>
+        <indirizzo>
+            <via>PZA COSTITUZIONE 1 A                              </via>
+            <cap>42013</cap>
+            <citta>CASALGRANDE              </citta>
+            <provincia>RE</provincia>
+            <modificato>false</modificato>
+        </indirizzo>
+        <dataNascita>09/02/1951</dataNascita>
+        <sesso>M</sesso>
+        <reteVendita>BANCA FIDEURAM S.p.A.</reteVendita>
+    </altro>
+    <polizze>
+        <polizza>
+            <prestazioni class="com.fideuram.crm.stampe.model.vospolizza.prestazioni.CapGarantito">
+                <dataRiferimentoNav>08/07/2013</dataRiferimentoNav>
+                <numeroQuote>8.899,46</numeroQuote>
+                <controvaloreQuote>94.260,14</controvaloreQuote>
+                <ipotesiValRiscattoScadenza>94.260,15</ipotesiValRiscattoScadenza>
+                <catenaccio>Prestazioni Calcolate sul minimo garantito ipotizzando il completamento del piano dei versamenti</catenaccio>
+                <differimento>113</differimento>
+                <tipoPrestazione>CG</tipoPrestazione>
+                <descizionePrestazione>PRODOTTO DI CAPITALE PRODOTTO GARANTITO</descizionePrestazione>
+                <valoreRiscattoScadenzaGarantito>88.927,00</valoreRiscattoScadenzaGarantito>
+            </prestazioni>
+            <rendita>
+                <certezza>
+                    <OpzioneAnni1>5</OpzioneAnni1>
+                    <OpzioneAnni2></OpzioneAnni2>
+                    <OpzioneAnni3></OpzioneAnni3>
+                    <OpzioneAnni4></OpzioneAnni4>
+                    <totaleRenditaCerta1AnnualePosticipata>6.568,26</totaleRenditaCerta1AnnualePosticipata>
+                    <totaleRenditaCerta1SemestralePosticipata>6.527,92</totaleRenditaCerta1SemestralePosticipata>
+                    <totaleRenditaCerta1TrimestralePosticipata>6.508,04</totaleRenditaCerta1TrimestralePosticipata>
+                    <totaleRenditaCerta1MensilePosticipata>6.494,90</totaleRenditaCerta1MensilePosticipata>
+                    <totaleRenditaCerta2AnnualePosticipata></totaleRenditaCerta2AnnualePosticipata>
+                    <totaleRenditaCerta2SemestralePosticipata></totaleRenditaCerta2SemestralePosticipata>
+                    <totaleRenditaCerta2TrimestralePosticipata></totaleRenditaCerta2TrimestralePosticipata>
+                    <totaleRenditaCerta2MensilePosticipata></totaleRenditaCerta2MensilePosticipata>
+                    <totaleRenditaCerta3AnnualePosticipata></totaleRenditaCerta3AnnualePosticipata>
+                    <totaleRenditaCerta3SemestralePosticipata></totaleRenditaCerta3SemestralePosticipata>
+                    <totaleRenditaCerta3TrimestralePosticipata></totaleRenditaCerta3TrimestralePosticipata>
+                    <totaleRenditaCerta3MensilePosticipata></totaleRenditaCerta3MensilePosticipata>
+                    <totaleRenditaCerta4AnnualePosticipata></totaleRenditaCerta4AnnualePosticipata>
+                    <totaleRenditaCerta4SemestralePosticipata></totaleRenditaCerta4SemestralePosticipata>
+                    <totaleRenditaCerta4TrimestralePosticipata></totaleRenditaCerta4TrimestralePosticipata>
+                    <totaleRenditaCerta4MensilePosticipata></totaleRenditaCerta4MensilePosticipata>
+                    <isPrestazioniAssicurate>true</isPrestazioniAssicurate>
+                </certezza>
+                <frazionamento>
+                    <ipotesiRenditaAnnuaPosticipataScadenzaCTV>6.604,72</ipotesiRenditaAnnuaPosticipataScadenzaCTV>
+                    <totaleRenditaFrazionataAnnualePosticipata>6.604,72</totaleRenditaFrazionataAnnualePosticipata>
+                    <totaleRenditaFrazionataSemestralePosticipata>6.562,27</totaleRenditaFrazionataSemestralePosticipata>
+                    <totaleRenditaFrazionataTrimestralePosticipata>6.541,36</totaleRenditaFrazionataTrimestralePosticipata>
+                    <totaleRenditaFrazionataMensilePosticipata>6.527,54</totaleRenditaFrazionataMensilePosticipata>
+                </frazionamento>
+            </rendita>
+            <reversibilita/>
+            <primoDifferimento>113</primoDifferimento>
+            <prodottoGarantito>S</prodottoGarantito>
+            <numero>7689429</numero>
+            <descrizioneCommerciale>Financial Age Protection 2</descrizioneCommerciale>
+            <codiceTariffa>959</codiceTariffa>
+            <descrizioneTariffa>Capitale differito con controassicurazione a premio ricorrente di tipo Unit Linked</descrizioneTariffa>
+            <tipoPrestazione>C</tipoPrestazione>
+            <tipoFormaAssicurazione>V</tipoFormaAssicurazione>
+            <descrizioneFondoSintetica>FAP</descrizioneFondoSintetica>
+            <tipo>A</tipo>
+            <conferimento>08783718009</conferimento>
+            <stato>AT</stato>
+            <sottostato>ATTIVA</sottostato>
+            <codiceSottostato>AT</codiceSottostato>
+            <dataEmissione>15/07/2004</dataEmissione>
+            <dataFineDifferimento>31/12/2013</dataFineDifferimento>
+            <contraente>
+                <denominazione>MAMMI ENZO</denominazione>
+                <indirizzo>
+                    <via>TRESSANO VIA CA&apos; DE FII 17</via>
+                    <cap>42014</cap>
+                    <citta>CASTELLARANO</citta>
+                    <provincia>RE</provincia>
+                </indirizzo>
+                <dataNascita>06/11/1939</dataNascita>
+                <sesso>M</sesso>
+                <reteVendita></reteVendita>
+            </contraente>
+            <assicurato>
+                <denominazione>BARDELLI MARIA CARLA</denominazione>
+                <indirizzo>
+                    <via>TRESSANO VIA CA&apos; DE FII 17</via>
+                    <cap>42014</cap>
+                    <citta>CASTELLARANO</citta>
+                    <provincia>RE</provincia>
+                </indirizzo>
+                <dataNascita>03/07/1942</dataNascita>
+                <sesso>F</sesso>
+                <reteVendita></reteVendita>
+            </assicurato>
+            <dataScadenza>31/12/2013</dataScadenza>
+            <labelDataScadenza>Data di fine differimento:</labelDataScadenza>
+            <ramoMinisteriale>3</ramoMinisteriale>
+            <eccedenza></eccedenza>
+            <riservaMatematica>88.848,28</riservaMatematica>
+            <dataRiferimentoQuote>08/07/2013</dataRiferimentoQuote>
+            <controvaloreQuote>94.417,46</controvaloreQuote>
+            <privateBanker>
+                <denominazione>TREVISI ELIGIO</denominazione>
+                <indirizzo>
+                    <via>PZA COSTITUZIONE 1 A                              </via>
+                    <cap>42013</cap>
+                    <citta>CASALGRANDE              </citta>
+                    <provincia>RE</provincia>
+                </indirizzo>
+                <dataNascita>09/02/1951</dataNascita>
+                <sesso>M</sesso>
+                <reteVendita>BANCA FIDEURAM S.p.A.</reteVendita>
+            </privateBanker>
+            <praticheAperte>false</praticheAperte>
+            <codiceIngressoBase>00</codiceIngressoBase>
+            <codiceIngresso>00</codiceIngresso>
+            <reteVendita>BFI</reteVendita>
+            <classe>CD</classe>
+            <codiceFondo>FAP</codiceFondo>
+            <codicePremio>A</codicePremio>
+            <codiceGruppo>UL</codiceGruppo>
+            <trasformata>false</trasformata>
+            <premiUnici>30.823,00</premiUnici>
+            <premiAnnui>58.104,00</premiAnnui>
+            <dataPremiDaIncassare></dataPremiDaIncassare>
+            <dataUltimaRataPagata></dataUltimaRataPagata>
+            <dataErogazioneRendita>31/12/2014</dataErogazioneRendita>
+            <dataUltimaRivalutazioneFineDifferimento>23/10/2013</dataUltimaRivalutazioneFineDifferimento>
+            <dataUltimaRivalutazioneSistema>23/10/2013</dataUltimaRivalutazioneSistema>
+            <dataRicorrenza75>31/12/2017</dataRicorrenza75>
+            <dataRicorrenza80>31/12/2022</dataRicorrenza80>
+            <dataRicorrenza85>31/12/2027</dataRicorrenza85>
+            <controassicurazione>true</controassicurazione>
+            <vincoloPegno>false</vincoloPegno>
+            <attributi>
+                <entry>
+                    <string>dataPremiDaIncassare</string>
+                    <string></string>
+                </entry>
+                <entry>
+                    <string>descrizioneSituazionePremi</string>
+                    <string></string>
+                </entry>
+                <entry>
+                    <string>valoreControvaloreQuote</string>
+                    <string>94.417,46</string>
+                </entry>
+                <entry>
+                    <string>sommaPremiUnici</string>
+                    <string>30.823,00</string>
+                </entry>
+                <entry>
+                    <string>sommaPremiAnnui</string>
+                    <string>58.104,00</string>
+                </entry>
+                <entry>
+                    <string>premiDaIncassare</string>
+                    <string></string>
+                </entry>
+                <entry>
+                    <string>dataRiferimentoSituazionePremi</string>
+                    <string>23/10/2013</string>
+                </entry>
+                <entry>
+                    <string>dataControvaloreQuote</string>
+                    <string>08/07/2013</string>
+                </entry>
+                <entry>
+                    <string>dataValutazione</string>
+                    <string>23/10/2013</string>
+                </entry>
+                <entry>
+                    <string>descrizionePremiDaIncassare</string>
+                    <string></string>
+                </entry>
+                <entry>
+                    <string>descrizioneControvaloreQuote</string>
+                    <string></string>
+                </entry>
+                <entry>
+                    <string>labelControvaloreQuote</string>
+                    <string>CONTROVALORE delle QUOTE</string>
+                </entry>
+            </attributi>
+            <tronconi>
+                <entry>
+                    <string>IndirizzoModificato</string>
+                    <string>Dalla corrispondenza intercorsa si evince un indirizzo diverso rispetto a quello presente nei nostri archivi anagrafici. Qualora fosse Sua intenzione modificare l&apos;indirizzo cui ricevere la documentazione relativa al contratto in oggetto, dovrà inviare a Banca Fideuram - Funzione Anagrafe – P.le Giulio Douhet, 31 - 00143 Roma – una comunicazione con l&apos;indicazione del nuovo recapito della corrispondenza.</string>
+                </entry>
+                <entry>
+                    <string>IndirizzoModificatoSPI</string>
+                    <string>Dalla corrispondenza intercorsa si evince un indirizzo diverso rispetto a quello presente nei nostri archivi anagrafici. Qualora fosse Sua intenzione modificare l&apos;indirizzo cui ricevere la documentazione relativa al contratto in oggetto, dovrà inviare a Fideuram Vita S.p.A. - Via Ennio Quirino Visconti, 80 - 00193 Roma – una comunicazione con l&apos;indicazione del nuovo recapito della corrispondenza.</string>
+                </entry>
+            </tronconi>
+            <scenario>IPOTESI CONSIDERATE:</scenario>
+            <prodotto>18003</prodotto>
+            <isCompletato>false</isCompletato>
+            <OpzioneAnni1></OpzioneAnni1>
+            <OpzioneAnni2></OpzioneAnni2>
+            <OpzioneAnni3></OpzioneAnni3>
+            <OpzioneAnni4></OpzioneAnni4>
+            <isPrestazioniAssicurate>true</isPrestazioniAssicurate>
+            <differimento>
+                <dataInizio>15/07/2004</dataInizio>
+                <dataFine>31/12/2013</dataFine>
+                <maggiore10anni>false</maggiore10anni>
+            </differimento>
+            <controlloCertezza>false</controlloCertezza>
+            <isACLSLungaSopravvivenza>false</isACLSLungaSopravvivenza>
+            <isFAP__R>false</isFAP__R>
+        </polizza>
+    </polizze>
+</model>

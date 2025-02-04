@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.fideuram.stampe</groupId>
+    <artifactId>project.stampe.moduli</artifactId>
+    <version>5.5.0-RELEASE</version>
+    <packaging>pom</packaging>
+    
+    <developers>
+        <developer>
+            <id>Arcangeli</id>
+            <name>Paolo Arcangeli</name>
+            <email>p.arcangeli@digitaliasistemi.it</email>
+            <organization>digitaliasistemi</organization>
+            <organizationUrl>http://www.digitaliasistemi.it/</organizationUrl>
+            <timezone>+1</timezone>
+            <roles/>
+        </developer>
+    </developers>
+    
+    <modules>
+        <module>modulo.sys.stampe</module>
+        <module>modulo.sys.clients.integration</module>
+        <module>modulo.dto.stampe</module>
+        <module>crm.stampe.engine</module>
+        <module>modulo.stampe.grafici</module>
+        <module>modulo.stampe.modello</module>
+        <module>modulo.bl.stampe.generics</module>
+        <module>modulo.bl.credenziali</module>
+        <module>modulo.bl.corrispondenze</module>
+        <module>modulo.bl.mandatiPagamento</module>
+        <module>modulo.bl.rendiconti</module> 
+        <module>modulo.bl.cud</module>
+        <module>modulo.bl.redditi</module>
+        <module>modulo.bl.collettive</module>
+        <module>modulo.bl.conguaglio</module>
+        <module>modulo.bl.quietanze</module>
+        <module>modulo.bl.destinatari.lettera</module>
+        <module>modulo.bl.display.polizza</module>
+        <module>modulo.bl.asset</module>
+        <module>modulo.bl.prospetto.offerta</module>
+        <module>modulo.bl.trasformazioni</module>
+        <module>modulo.bl.preventivi</module>
+        <module>crm.stampe.fv.scampoli.xslt</module>
+        <module>deployable.ear.stampe.ejb</module>
+        <module>deployable.war.quietanze.web</module>
+        <module>deployable.war.trigger.ws</module>
+        <module>deployable.war.corrispondenze.web</module>
+        <module>deployable.war.server.ws</module>
+        <module>deployable.war.servizi.ws</module>
+        <module>deployable.war.grafici.ws</module>
+        <module>modulo.ejb.server</module>
+    </modules>
+    <properties>
+           <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+           <project.build.rel>${project.version}</project.build.rel>
+           <dev_resources>${basedir}/src/main/resources</dev_resources>
+           <tst_resources>${basedir}/src/test/resources</tst_resources>
+           <weblogic.version>10.0.3-RELEASE</weblogic.version>
+           <freemarker.version>2.3.16</freemarker.version>
+           <!--<xdocreport.version>1.0.3</xdocreport.version>-->
+           <xdocreport.version>0.9.7</xdocreport.version>
+           <java.source>1.6</java.source>
+           <java.target>1.6</java.target>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.8</version>
+            <type>jar</type>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.4</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>1.8.3</version>
+            <scope>compile</scope>
+        </dependency>
+		<dependency>
+		    <groupId>commons-io</groupId>
+		    <artifactId>commons-io</artifactId>
+		    <version>2.11.0</version>
+		</dependency>        
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.1.1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.4</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>2.1.1</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+    <build>
+        <resources>
+            <resource>
+                <directory>${dev_resources}</directory>
+                <excludes>
+                    <exclude>crm-config.properties</exclude>
+                </excludes>
+                <includes>
+                    <!-- <include>log4j.properties</include>-->
+                </includes>
+            </resource>
+        </resources>
+        <testResources>
+            <testResource>
+                <filtering>true</filtering>
+                <directory>${tst_resources}</directory>
+                <includes>
+                    <include>*</include>
+                    <include>crm-config.properties</include>
+                    <include>log4j.properties</include>
+                </includes>
+            </testResource>
+        </testResources>
+        <defaultGoal>package</defaultGoal>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>${java.source}</source>
+                    <target>${java.target}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.4.3</version>
+                <configuration>
+                 <skipTests>true</skipTests>
+                    <includes>
+                        <include>**/*Test.java</include>
+                    </includes>
+                    <systemProperties>
+                        <property>
+                            <name>crm.config.file</name>
+                            <value>${basedir}/src/test/resources/crm-config.properties</value>
+                        </property>
+                        <property>
+                            <name>log4j.config.file</name>
+                            <value>${basedir}/src/test/resources/log4j.properties</value>
+                        </property>
+                    </systemProperties>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>cobertura-maven-plugin</artifactId>
+                <version>2.3</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>clean</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <inherited>true</inherited>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.2.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-site-plugin</artifactId>
+            <version>3.2</version>
+            <configuration>
+                <locales>it</locales>
+            </configuration>
+        </plugin>
+            <!--<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+            </plugin>-->
+<!--             <plugin> -->
+<!--                 <inherited>true</inherited> -->
+<!--                 <groupId>org.apache.maven.plugins</groupId> -->
+<!--                 <artifactId>maven-javadoc-plugin</artifactId> -->
+<!--                 <version>2.9.1</version> -->
+                 
+<!--                 <executions> -->
+<!--                     <execution> -->
+<!--                         <id>attach-javadocs</id> -->
+<!--                         <goals> -->
+<!--                             <goal>jar</goal> -->
+<!--                         </goals> -->
+<!--                     </execution> -->
+<!--                 </executions> -->
+<!--             </plugin> -->
+            <plugin>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.3.1</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <classpathLayoutType>simple</classpathLayoutType>
+                        </manifest>
+                        <manifestEntries>
+                            <mode>development</mode>
+                            <url>${pom.url}</url>
+                            <key>value</key>
+                        </manifestEntries>
+                    </archive>
+                </configuration>
+            </plugin>
+            <!-- disable javadocs check -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <configuration>
+                    <!-- <additionalparam>-Xdoclint:none</additionalparam> -->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <distributionManagement>
+      <!-- <repository>
+       	<id>nexus</id>
+            <name>RepositoryProxy</name>
+            <url>http://fvaskalm01p.fidevita.bancafideuram.it:8081/repository/Releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <name>RepositoryProxy</name>
+            <url>http://fvaskalm01p.fidevita.bancafideuram.it:8081/repository/snapshots</url>
+        </snapshotRepository>   -->
+        
+      <repository>
+			<id>nexus</id>
+			<name>RepositoryProxy</name>
+			<url>http://fvasknexus01p.fidevita.bancafideuram.it:8081/repository/Releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus</id>
+			<name>RepositoryProxy</name>
+			<url>http://fvasknexus01p.fidevita.bancafideuram.it:8081/repository/snapshots/</url>
+		</snapshotRepository> 
+        
+    </distributionManagement>
+</project>

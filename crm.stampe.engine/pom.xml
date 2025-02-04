@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.fideuram.stampe</groupId>
+		<artifactId>project.stampe.moduli</artifactId>
+		<version>5.5.0-RELEASE</version>
+	</parent>
+	<groupId>com.fideuram.crm.stampe</groupId>
+	<artifactId>crm.stampe.engine</artifactId>
+	<!-- version>5.0.1-RELEASE</version -->
+	<name>crm.stampe.engine</name>
+	<url>http://maven.apache.org</url>
+	<packaging>jar</packaging>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<junit.version>4.7.0</junit.version>
+		<commons.logging.version>1.1.1</commons.logging.version>
+		<dev_resources>${basedir}/src/main/resources</dev_resources>
+		<tst_resources>${basedir}/src/test/resources</tst_resources>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>com.fideuram</groupId>
+			<artifactId>modulo.bl.stampe.generics</artifactId>
+			<version>${project.build.rel}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fideuram</groupId>
+			<artifactId>modulo.sys.stampe</artifactId>
+			<version>${project.build.rel}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fideuram</groupId>
+			<artifactId>modulo.sys.clients.integration</artifactId>
+			<version>${project.build.rel}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>com.fideuram</groupId>
+					<artifactId>client.ws.crm</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.fideuram</groupId>
+			<artifactId>modulo.bl.destinatari.lettera</artifactId>
+			<version>${project.build.rel}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-discovery</groupId>
+			<artifactId>commons-discovery</artifactId>
+			<version>20040218.194635</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>1.6.1</version>
+			<type>jar</type>
+			<scope>compile</scope>
+            <exclusions>               
+				<exclusion>
+				    <groupId>xml-apis</groupId>
+    				<artifactId>xml-apis</artifactId>
+				</exclusion>		                
+            </exclusions>    			
+		</dependency>
+		<dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+			<version>${freemarker.version}</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>xom</groupId>
+			<artifactId>xom</artifactId>
+			<version>1.2.5</version>
+			<!--<type>jar</type> -->
+			<!--<scope>compile</scope> -->
+			<exclusions>
+				<exclusion>
+					<groupId>xerces</groupId>
+					<artifactId>xmlParserAPIs</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>xerces</groupId>
+					<artifactId>xercesImpl</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>xalan</groupId>
+					<artifactId>xalan</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>jaxen</groupId>
+					<artifactId>jaxen</artifactId>
+				</exclusion>
+				<exclusion>
+				    <groupId>xml-apis</groupId>
+    				<artifactId>xml-apis</artifactId>
+				</exclusion>				
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>xpp3</groupId>
+			<artifactId>xpp3_min</artifactId>
+			<version>1.1.4c</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.thoughtworks.xstream</groupId>
+			<artifactId>xstream</artifactId>
+			<version>1.4.19</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>net.sf.jodreports</groupId>
+			<artifactId>jodreports</artifactId>
+			<version>2.4.0</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>com.fideuram.stampe</groupId>
+			<artifactId>fidevita</artifactId>
+			<version>1.0-RELEASE</version>
+			<!-- <scope>provided</scope> -->
+		</dependency>
+
+		<dependency>
+			<groupId>oracle.weblogic</groupId>
+			<artifactId>webservices</artifactId>
+			<version>${weblogic.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.6.1</version>
+			<type>jar</type>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>1.6.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jopendocument</groupId>
+			<artifactId>jOpenDocument</artifactId>
+			<version>1.2</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fideuram.client</groupId>
+			<artifactId>jboss.ws.crm.client</artifactId>
+			<version>0.0.1-RELEASE</version>
+		</dependency>
+
+		<!-- serve per i test -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.sun.xml.ws</groupId> -->
+<!-- 			<artifactId>jaxws-rt</artifactId> -->
+<!-- 			<version>2.1.3</version> -->
+<!-- 			<scope>test</scope> -->
+<!-- 		</dependency> -->
+			<dependency>
+				<groupId>com.sun.xml.bind</groupId>
+				<artifactId>jaxb-impl</artifactId>
+				<version>2.1.12</version>
+				<scope>test</scope> 
+			</dependency>
+			<dependency>
+				<groupId>com.sun.xml.ws</groupId>
+				<artifactId>policy</artifactId>
+				<version>2.3.1</version>
+				<scope>test</scope> 
+			</dependency>
+			<dependency>
+				<groupId>javax.xml.ws</groupId>
+				<artifactId>jaxws-api</artifactId>
+				<version>2.1</version>
+				<scope>test</scope> 
+			</dependency>
+			<dependency>
+				<groupId>com.sun.xml.stream.buffer</groupId>
+				<artifactId>streambuffer</artifactId>
+				<version>1.5.3</version>
+				<scope>test</scope> 
+			</dependency>
+			<dependency>
+				<groupId>org.glassfish.gmbal</groupId>
+				<artifactId>gmbal-api-only</artifactId>
+				<version>3.2.0-b003</version>
+				<scope>test</scope> 
+			</dependency>
+		<!-- fine -->
+
+	</dependencies>
+
+
+
+	<build>
+		<finalName>crm.stampe.engine</finalName>
+		<defaultGoal>package</defaultGoal>
+		<resources>
+			<resource>
+				<directory>${basedir}/src/main/resources</directory>
+				<filtering>true</filtering>
+				<excludes>
+					<exclude>*web*.xml</exclude>
+					<exclude>crm-config.properties</exclude>
+				</excludes>
+			</resource>
+			<resource>
+				<directory>${profiledLog4j}</directory>
+				<includes>
+					<include>log4j.properties</include>
+				</includes>
+			</resource>
+		</resources>
+	</build>
+</project>

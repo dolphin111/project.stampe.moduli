@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.fideuram.stampe</groupId>
+        <artifactId>project.stampe.moduli</artifactId>
+        <version>5.5.0-RELEASE</version>
+        <!--relativePath>../project.stampe.moduli/pom.xml</relativePath-->
+    </parent>
+    <groupId>com.fideuram</groupId>
+    <artifactId>deployable.ear.stampe.ejb</artifactId>
+    <!-- version>5.0.1-RELEASE</version-->
+    <name>deployable.ear.stampe.ejb</name>
+    <url>http://maven.apache.org</url>
+    <packaging>ear</packaging>
+    <dependencies>
+        <!--
+        <dependency>
+            <groupId>com.fideuram</groupId>
+            <artifactId>modulo.ejb.queue.collettive</artifactId>
+            <version>${project.build.rel}</version>
+            <type>ejb</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fideuram</groupId>
+            <artifactId>modulo.ejb.queue.info</artifactId>
+            <version>${project.build.rel}</version>
+            <type>ejb</type>
+        </dependency>
+        <dependency>
+            <groupId>com.fideuram</groupId>
+            <artifactId>modulo.ejb.queue.prospetti</artifactId>
+            <version>${project.build.rel}</version>
+            <type>ejb</type>
+        </dependency>
+        -->
+
+        <dependency>
+            <groupId>com.fideuram</groupId>
+            <artifactId>modulo.ejb.server</artifactId>
+            <version>${project.build.rel}</version>
+            <type>ejb</type>
+        </dependency>
+    </dependencies>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <build>
+        <finalName>CRM.Stampe</finalName>
+        <defaultGoal>package</defaultGoal>
+        <resources>
+            <resource>
+                <directory>../src/java/META-INF</directory>
+                <targetPath>META-INF</targetPath>
+                <filtering>false</filtering>
+                <includes>
+                    <include>weblogic-application.xml</include>
+                </includes>
+            </resource>
+        </resources>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-ear-plugin</artifactId>
+                <configuration>
+                    <!--defaultLibBundleDir>APP-INF/lib</defaultLibBundleDir-->
+                    <defaultLibBundleDir>lib</defaultLibBundleDir>
+                    <outputDirectory>target/diraliases/APPFILES27/CRM.Stampe</outputDirectory>
+                    <modules>
+                       <!--
+                       <ejbModule>
+                            <groupId>com.fideuram</groupId>
+                            <artifactId>modulo.ejb.queue.collettive</artifactId>
+                        </ejbModule>
+
+                        <ejbModule>
+                            <groupId>com.fideuram</groupId>
+                            <artifactId>modulo.ejb.queue.info</artifactId>
+                        </ejbModule>
+                       <ejbModule>
+                            <groupId>com.fideuram</groupId>
+                            <artifactId>modulo.ejb.queue.prospetti</artifactId>
+                        </ejbModule>
+                        -->
+                        <ejbModule>
+                            <groupId>com.fideuram</groupId>
+                            <artifactId>modulo.ejb.server</artifactId>
+                            <uri>modulo.ejb.server.jar</uri>
+                			<bundleFileName>modulo.ejb.server.jar</bundleFileName>
+                        </ejbModule>
+                    </modules>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

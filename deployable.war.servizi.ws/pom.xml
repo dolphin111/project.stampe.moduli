@@ -1,0 +1,109 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.fideuram.stampe</groupId>
+        <artifactId>project.stampe.moduli</artifactId>
+        <version>5.5.0-RELEASE</version>
+        <!--relativePath>../project.stampe.moduli/pom.xml</relativePath-->
+    </parent>
+  <groupId>com.fideuram</groupId>
+  <artifactId>deployable.war.servizi.ws</artifactId>
+  <packaging>war</packaging>
+  <!-- version>5.0.1-RELEASE</version-->
+ 
+  <name>deployable.war.servizi.ws</name>
+ 
+  <dependencies>
+      <dependency>
+          <groupId>com.fideuram</groupId>
+          <artifactId>modulo.sys.stampe</artifactId>
+          <version>${project.build.rel}</version>
+      </dependency>
+      <dependency>
+          <groupId>com.fideuram</groupId>
+          <artifactId>modulo.bl.stampe.generics</artifactId>
+          <version>${project.build.rel}</version>
+      </dependency>
+      <dependency>
+          <groupId>com.fideuram</groupId>
+          <artifactId>modulo.bl.prospetto.offerta</artifactId>
+          <version>${project.build.rel}</version>
+          <exclusions>
+          	<!-- G.C.-20170126 Eliminata esclusione -->
+      			<!--  
+      			<exclusion>
+        			<groupId>com.fideuram</groupId>
+        			<artifactId>client.ws.stampeFv</artifactId>
+      			</exclusion>
+      			
+      			<exclusion>
+        			<groupId>com.fideuram</groupId>
+        			<artifactId>client.ws.puc</artifactId>
+      			</exclusion>
+      			-->
+    		</exclusions>
+      </dependency>
+      <dependency>
+          <groupId>com.fideuram</groupId>
+          <artifactId>crm.stampe.fv.scampoli.xslt</artifactId>
+          <version>${project.build.rel}</version>
+      </dependency>
+      <dependency>
+          <groupId>com.fideuram</groupId>
+          <artifactId>modulo.bl.display.polizza</artifactId>
+          <version>${project.build.rel}</version>
+      </dependency>
+      <dependency>
+          <groupId>com.fideuram</groupId>
+          <artifactId>modulo.bl.credenziali</artifactId>
+          <version>${project.build.rel}</version>
+      </dependency>
+      <dependency>
+          <groupId>com.fideuram</groupId>
+          <artifactId>modulo.bl.preventivi</artifactId>
+          <version>${project.build.rel}</version>
+      </dependency>
+      <dependency>
+          <groupId>com.fideuram</groupId>
+          <artifactId>modulo.bl.asset</artifactId>
+          <version>${project.build.rel}</version>
+      </dependency>
+      <dependency>
+          <groupId>com.fideuram</groupId>
+          <artifactId>modulo.bl.trasformazioni</artifactId>
+          <version>${project.build.rel}</version>
+      </dependency>
+      <dependency>
+          <groupId>com.fideuram</groupId>
+          <artifactId>modulo.bl.cud</artifactId>
+          <version>${project.build.rel}</version>
+      </dependency>
+      <dependency>
+          <groupId>com.fideuram</groupId>
+          <artifactId>modulo.bl.rendiconti</artifactId>
+          <version>${project.build.rel}</version>
+      </dependency>
+      <dependency>
+          <groupId>com.sun.xml.ws</groupId>
+          <artifactId>jaxws-rt</artifactId>
+          <version>2.2.8</version>
+      </dependency>
+  </dependencies>
+
+    <build>
+        <finalName>stampe.ws</finalName>
+        <defaultGoal>package</defaultGoal>
+        <plugins>
+        	 <plugin>
+                  <groupId>org.apache.maven.plugins</groupId>
+                  <artifactId>maven-war-plugin</artifactId>
+                 
+                  <configuration>
+                      <failOnMissingWebXml>false</failOnMissingWebXml>
+                      <outputDirectory>target/diraliases/APPFILES27/stampe.ws</outputDirectory>
+                  </configuration>
+              </plugin>
+        </plugins>
+    </build>
+</project>
