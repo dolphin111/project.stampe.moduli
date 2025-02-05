@@ -32,10 +32,10 @@ public class PrinterCu2025  extends Cud
     	 *  		aggiunta al nome file, lo rende univoco
     	 *
     	 * */
-    	String pattern = "dd/MM/yyyy HH:mm:ss.SSS"; // 27/05/2019 16:52:41
+    	// String pattern = "dd/MM/yyyy HH:mm:ss.SSS"; // 27/05/2019 16:52:41
 		String pattternDataFile = "yyyyMMddHHmmss.SSS";
 
-    	SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+    	// SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
 		SimpleDateFormat pattternDataFileDateFormat = new SimpleDateFormat(pattternDataFile);
 
 		dataFileOutput = pattternDataFileDateFormat.format(new Date());
@@ -43,7 +43,7 @@ public class PrinterCu2025  extends Cud
     	 *
     	 * */
 
-        String fs= CrmProperties.getProperty("cud.output")+"\\2023\\";
+        String fs= CrmProperties.getProperty("cud.output") + "2025\\";
 		System.out.println(new Exception().getStackTrace()[0] + ": fs = " + fs);
 
 
