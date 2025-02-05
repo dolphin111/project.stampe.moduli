@@ -7,22 +7,22 @@ import com.itextpdf.text.Element;
 import com.itextpdf.text.pdf.ColumnText;
 import com.itextpdf.text.pdf.PdfStamper;
 
-public class Pag2 extends PaginaBase 
+public class Pag2 extends PaginaBase
 {
     public void stampa(PdfStamper stamper, Cud2019 cud, int pag) {
         canvas = stamper.getOverContent(pag);//pag.4
-        
+
         int anno = 2019;
-        
+
         System.out.println("***************pagina modello cud: " + pag);
-        
-        if(cud.isRettifica())
-        { 
+
+        if(cud.isSostituzione())
+        {
         	ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("ANNULLA E SOSTITUISCE", 12), 390, 820, 0);
         }
-        
+
         propagaCF(cud,pag);
-        
+
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ5().getC1()), 132, 736, 0);
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ5().getC2()), 240, 736, 0);
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ5().getC3()), 348, 736, 0);
@@ -70,7 +70,7 @@ public class Pag2 extends PaginaBase
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ9().getC322()),250, 447, 0);
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ9().getC324()),364, 447, 0);
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ9().getC326()),480, 447, 0);
-        
+
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ9().getC327()),132, 425, 0);
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ9().getC331()),250, 425, 0);
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ9().getC332()),364, 425, 0);

@@ -4,8 +4,6 @@ import com.fideuram.printer.PaginaBase;
 import com.fideuram.stampe.modello.redditi.anagrafica.familiari.Familiare;
 import com.fideuram.stampe.modello.redditi.anagrafica.familiari.FamiliariACarico;
 import com.fideuram.stampe.modello.redditi.d2021.Cud2021;
-import com.fideuram.stampe.modello.redditi.d2021.datiPrevidenziali.DatiPrevidenziali;
-import com.fideuram.stampe.modello.redditi.d2021.redditidiversi.GestioneSeparata;
 import com.itextpdf.text.Element;
 import com.itextpdf.text.pdf.ColumnText;
 import com.itextpdf.text.pdf.PdfStamper;
@@ -15,23 +13,23 @@ import com.itextpdf.text.pdf.PdfStamper;
  * Date: 14/01/16
  * Time: 12.05
  */
-public class Pag4 extends PaginaBase 
+public class Pag4 extends PaginaBase
 {
     public void stampa(PdfStamper stamper, Cud2021 cud, int pag) {
-    	
+
         canvas = stamper.getOverContent(pag);
-        
+
         int anno = 2021;
-        
+
         System.out.println("***************pagina modello cud (anno "+anno+"): " + pag);
-        
-        if(cud.isRettifica())
-        { 
+
+        if(cud.isSostituzione())
+        {
         	ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("ANNULLA E SOSTITUISCE", 12), 390, 820, 0);
         }
-        
+
         propagaCF(cud,pag);
-        
+
         /*GIO:::*/
         //FAMILIARI A CARICO
         if(cud.getPercettoreSomme().hasFamiliariACarico()){
@@ -73,8 +71,8 @@ public class Pag4 extends PaginaBase
             ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(familiariACarico.getPercDetrazioneSpettante()),384, 643, 0);
         }
         /*GIO:::*/
-        
-/*      GIO::: 2020  
+
+/*      GIO::: 2020
         DatiPrevidenziali dp=cud.getDatiPrevidenziali();
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ19().getC1()), 124, 760, 0);
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ19().getC2()), 223, 760, 0);
@@ -99,7 +97,7 @@ public class Pag4 extends PaginaBase
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ20().getC16()), 485, 673, 0);
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ20().getC17()), 516, 673, 0);
 */
-/*    GIO::: 2020    
+/*    GIO::: 2020
       ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ20().getC18()),  128, 639, 0);
       ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ20().getC19()),  222, 639, 0);
       ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ20().getC20()),  312, 639, 0);
@@ -118,13 +116,13 @@ public class Pag4 extends PaginaBase
       ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ20().getC33()),  128, 531, 0);
       ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ20().getC34()),  222, 531, 0);
 */
-        
+
       /*  if (dp.getQ20().isT()){
             //ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase("X"), 305, 532, 0);
         }else{
             stMesi(dp.getQ20().getC36(),328, 532);
         }*/
-        
+
 /*      GIO::: 2020
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ20().getC37()),  128, 495, 0);
         stMesi(dp.getQ20().getC38(),248, 496);
@@ -137,20 +135,20 @@ public class Pag4 extends PaginaBase
         //IL 41 DIVENTA 43 FINO AL 50 +2
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ21().getC41()),  128, 424, 0);
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ21().getC42()),  244, 424, 0);
-        
+
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ21().getC43()),  361, 424, 0);
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ21().getC44()),  476, 424, 0);
-*/        
+*/
        /* if (dp.getQ21().isT()){
            // ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase("X"), 125, 388, 0);
         }else{
             stMesi(dp.getQ21().getC46(),149, 388);
         }*/
 
-/*      GIO::: 2020  
+/*      GIO::: 2020
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ21().getC47()),  335, 388, 0);
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ21().getC48()),  378, 388, 0);
-        
+
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ22().getC49()),  128, 350, 0);
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ22().getC50()),  264, 350, 0);
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ22().getC52()),  128, 327, 0);
@@ -183,7 +181,7 @@ public class Pag4 extends PaginaBase
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ23().getC74()),  408, 257, 0);
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ23().getC75()),  476, 257, 0);
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ23().getC76()),  545, 257, 0);
-*/ 
+*/
         /*
         GestioneSeparata g=cud.getGestioneSeparata();
         ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(g.getQ24().getC801()), 136, 196, 0);
@@ -205,11 +203,11 @@ public class Pag4 extends PaginaBase
 
 
     private void stMesi(char[] c,  int colonna, int riga){
-        
+
         for(int i=0;c != null && i<c.length;i++){
             ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(c[i]+""), colonna, riga, 0);
             colonna=colonna+14;
         }
     }
-    
+
 }

@@ -1,6 +1,5 @@
 package com.fideuram.printer.stampa2023.sintetico;
 
-import com.fideuram.printer.stampa2023.sintetico.Pag4;
 import com.fideuram.printer.stampa2023.Lettera;
 import com.fideuram.printer.stampa2023.Pag1;
 import com.fideuram.printer.stampa2023.PrinterCu2023;
@@ -31,7 +30,7 @@ public class PrinterCu2023Sintetico extends PrinterCu2023 {
     	  new Lettera().stampa(stamper, cud,1);//LETTERA
 
         // Aprile 2023 (Engineering) (aggiunta istruzione IF come condizione per l'annullamento, per generare solo la prima pagina)
-        if (CudBase.ANNULLA_DICHIARAZIONE != cud.getTipoDichiarazione()) {
+        if (CudBase.ANNULLAMENTO != cud.getTipoDichiarazione()) {
             //2-pagina bianca
             new Pag1().stampa(stamper, cud, 3);//DATI ANAGRAFICI
             new Pag2().stampa(stamper, cud, 4);//DATI FISCALI

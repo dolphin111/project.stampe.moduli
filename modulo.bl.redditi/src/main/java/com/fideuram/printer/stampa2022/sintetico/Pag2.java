@@ -7,29 +7,29 @@ import com.itextpdf.text.Element;
 import com.itextpdf.text.pdf.ColumnText;
 import com.itextpdf.text.pdf.PdfStamper;
 
-public class Pag2 extends PaginaBase 
+public class Pag2 extends PaginaBase
 {
     public void stampa(PdfStamper stamper, Cud2022 cud, int pag) {
-    	
+
         canvas = stamper.getOverContent(pag);//pag.4
-        
+
         int anno = 2022;
-        
+
         System.out.println("***************pagina modello cud (anno "+anno+"): " + pag);
-        
-        if(cud.isRettifica())
-        { 
+
+        if(cud.isSostituzione())
+        {
         	ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("ANNULLA E SOSTITUISCE", 12), 390, 820, 0);
         }
-        
+
         propagaCF(cud,pag);
         //DATI FISCALI																						colonna	 riga
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ5().getC1()), 132, 736, 0);//2022
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ5().getC2()), 240, 736, 0);//2022
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ5().getC3()), 348, 736, 0);//2022
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ5().getC4()), 460, 736, 0);//2022
-        
-        //GIO:::        
+
+        //GIO:::
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ5().getC5()), 132, 690, 0);//2022
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ5().getC6()), 238, 690, 0);//2022 N.GG LAVORO DIP
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ5().getC7()), 282, 690, 0);//2022 N.GG PENSIONE
@@ -41,7 +41,7 @@ public class Pag2 extends PaginaBase
         //GIO::: 2022 - NON PRESENTI
 //        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ5().getC13()), 238, 655, 0);//2021 N.GG LAVORO DIP
 //        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ5().getC14()), 282, 655, 0);//2021 N.GG LAVORO DIP
-        
+
         //RITENUTE - 1 RIGA
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ6().getC21()), 132, 615, 0);//2022 RITENUTE IRPEF
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ6().getC22()), 219, 615, 0);//2022 ADD REG IRPEF
@@ -53,11 +53,11 @@ public class Pag2 extends PaginaBase
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ6().getC31()), 219, 616, 0);//2022 ADD IRPEF SOSP
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ6().getC33()), 394, 616, 0);//2022 ADD COM ACC 2021
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ6().getC34()), 481, 616, 0);//2022 ADD COM SALDO 2021
-        
+
         //ASS. FISC. DICH.
         //ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ7().getC53()), 124, 580, 0);//2021 vedere istruzioni
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ7().getC54()), 165, 580, 0);//2022 PRES 730 INTEGR
-        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ7().getC55()), 165, 580, 0);//2022 PRE 730 RETT  
+        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ7().getC55()), 165, 580, 0);//2022 PRE 730 RETT
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ7().getC63()), 255, 580, 0);//2022 SALDO IRPEF     - Non tratt
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ7().getC73()), 333, 580, 0);//2022 ADD REG 	     - Non tratt
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ7().getC83()), 410, 580, 0);//2022 SALDO ADD 	 	 - Non tratt
@@ -67,7 +67,7 @@ public class Pag2 extends PaginaBase
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ7().getC74()), 215, 545, 0);//2022 addiz regionale 	  - Non rimb
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ7().getC84()), 290, 545, 0);//2022 saldo addiz 		  - Non rimb
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ7().getC94()), 374, 545, 0);//2022 saldo cedolare secca - Non rimb
-        
+
         //ACC. DICH 2021
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ7().getC121()),132, 508, 0);//2022 PRIMO ACCONTO
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ7().getC122()),215, 508, 0);//2022 SECONDO ACCONTO
@@ -78,7 +78,7 @@ public class Pag2 extends PaginaBase
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ7().getC131()),132, 485, 0);//2022 ACC IRPEF SOSP
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ7().getC132()),215, 485, 0);//2022 ACC ADD IRPEF COM
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ7().getC133()),290, 485, 0);//2022 ACC CED SECCA SOSP
-        
+
         //ASS. FISC. CONIUGE - NON TRATT
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ9().getC263()),132, 447, 0);//2022 SALDO IRPEF 2020
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ9().getC273()),219, 447, 0);//2022 ADDIZ REG 2020
@@ -89,7 +89,7 @@ public class Pag2 extends PaginaBase
 		ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ9().getC274()),219, 412, 0);//2022 ADDIZ REG 2020
 		ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ9().getC284()),304, 412, 0);//2022 SALDO ADDIZ 2020
 		ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ9().getC294()),392, 412, 0);//2022 SALDO CED SECCA 2020
-        
+
 		//CONIUGE ACC. IRPEF - 1 RIGA
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ9().getC321()),132, 376, 0);//2022 1 ACC. CONIUGE
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ9().getC322()),250, 376, 0);//2022 2 ACC CONIUGE
@@ -114,38 +114,38 @@ public class Pag2 extends PaginaBase
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ10().getC350()),279, 304, 0);//2022 IMP
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ10().getC351()),367, 304, 0);//2022 COD
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ10().getC352()),400, 304, 0);//2022 IMP
-        
+
         //DETRAZIONI E CREDITI
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC361()),131, 245, 0);//2022 IMPOSTA LORDA
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC362()),246, 245, 0);//2022 DETRAZ CARICHI FAM
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC363()),356, 245, 0);//2022 DETRAZ FAM NUM
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC364()),472, 245, 0);//2022 CREDITO RIC FAM NUM
-        
-        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC365()),131, 220, 0);//2022 
-        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC366()),244, 220, 0);//2022 
-        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC367()),356, 220, 0);//2022 
-        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC368()),472, 220, 0);//2022 
-        
-        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC369()),131, 232, 0);//2022 
-        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC370()),244, 232, 0);//2022 
-        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC371()),356, 232, 0);//2022 
-        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC372()),472, 232, 0);//2022 
+
+        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC365()),131, 220, 0);//2022
+        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC366()),244, 220, 0);//2022
+        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC367()),356, 220, 0);//2022
+        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC368()),472, 220, 0);//2022
+
+        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC369()),131, 232, 0);//2022
+        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC370()),244, 232, 0);//2022
+        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC371()),356, 232, 0);//2022
+        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC372()),472, 232, 0);//2022
         //
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC373()),131, 171, 0);//2022 CREDITO CANONI LOCAZ
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC374()),244, 171, 0);//2022 TOTALE DETRAZ
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC375()),356, 171, 0);//2022 IMPOSTA NETTA
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC376()),472, 171, 0);//2022 CR. IMPOSTA
-        
+
         //REDD ESTERO / IMPOSTA ESTERO - VERIFICARE
         //ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC377()),131, 160, 0);//2022 COD. STATO EE
         //ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC378()),244, 160, 0);//2022 ANNO REDDITO EE
-        
+
         //GIO::: 2022 CODICE TRATTAMENTO
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC390()),127, 75, 0);//2022 COD TRATT
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC391()),127, 75, 0);//2022 TRATT EROGATO - VERIFICARE
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC392()),170, 221, 0);//2022 SOLO EXCEL
 //        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC393()),260, 221, 0);//2022  SOLO EXCEL
-        
+
         //GIO::: 2022 - TRATTAMENTO INTEGRATIVO (NON ESISTONO)
 //        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC400()),356, 75, 0);
 //        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ11().getC401()),400, 75, 0);

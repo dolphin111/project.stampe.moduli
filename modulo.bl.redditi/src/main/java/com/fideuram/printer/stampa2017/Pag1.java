@@ -16,12 +16,12 @@ import com.itextpdf.text.pdf.PdfStamper;
 public class Pag1 extends PaginaBase {
     public void stampa(PdfStamper stamper,Cud2017 cud,int pag){
         canvas = stamper.getOverContent(pag); //Pagina 1
-        
-        if(cud.isRettifica())
-        { 
+
+        if(cud.isSostituzione())
+        {
         	ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("ANNULLA E SOSTITUISCE", 12), 390, 820, 0);
         }
-        
+
         ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(cud.getPercettoreSomme().getCf()), 122, 617, 0);
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getPercettoreSomme().getCognome()),                                  268, 617, 0);
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getPercettoreSomme().getNome()),                                     442, 617, 0);

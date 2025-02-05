@@ -1,6 +1,5 @@
 package com.fideuram.printer.stampa2025;
 
-
 import com.fideuram.printer.PaginaBase;
 import com.fideuram.stampe.modello.redditi.anagrafica.ResidenzaEstero;
 import com.fideuram.stampe.modello.redditi.d2025.Cud2025;
@@ -29,15 +28,20 @@ public class Pag1 extends PaginaBase {
 
         System.out.println("***************pagina modello cud (anno "+anno+"): " + pag);
 
-        if(cud.isRettifica())
+        if(cud.isSostituzione())
         {
         	ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("ANNULLA E SOSTITUISCE", 12), 390, 820, 0);
         }
         //ANNO IMPOSTA
 
-		// TODO prevedere una qualche configurazione per elaborare temporaneamente l'anno riferimento attuale anziche' il precedente
-        // ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(anno-1), 									485, 763, 0);
-        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(anno), 										485, 763, 0);
+		/*
+		 * TODO prevedere una qualche configurazione per elaborare temporaneamente l'anno riferimento attuale
+		 * (forzatura, ad esempio generazione delle CU 2025 (con anno riferimento 2024) prima del 01/01/2025) anziche'
+		 * il precedente (comportamento normale, riprendendo l'esempio di prima: generazione dal 01/01/2025 in poi). Valutare se usare la chiave "isAnnoRiferimentoAttuale"
+		 * del progetto com.fideuram.etl:GestioneCU
+		 */
+        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(anno - 1), 									485, 763, 0);
+        // ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(anno), 										485, 763, 0);
 
         //DATORE LAVORO / SOSTITUTO IMPOSTA
         ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("10830461009"), 							122, 690, 0);

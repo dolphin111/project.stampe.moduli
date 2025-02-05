@@ -2,7 +2,6 @@ package com.fideuram.printer.stampa2024.sintetico;
 
 import com.fideuram.printer.PaginaBase;
 import com.fideuram.stampe.modello.redditi.d2024.Cud2024;
-import com.fideuram.stampe.modello.redditi.d2024.redditidiversi.GestioneSeparata;
 import com.itextpdf.text.Element;
 import com.itextpdf.text.pdf.ColumnText;
 import com.itextpdf.text.pdf.PdfStamper;
@@ -22,7 +21,7 @@ public class Pag5 extends PaginaBase
 
         System.out.println("***************pagina modello cud (anno "+anno+"): " + pag);
 
-        if(cud.isRettifica())
+        if(cud.isSostituzione())
         {
         	ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("ANNULLA E SOSTITUISCE", 12), 390, 820, 0);
         }

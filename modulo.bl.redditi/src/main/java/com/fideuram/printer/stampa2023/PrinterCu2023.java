@@ -48,11 +48,11 @@ public class PrinterCu2023  extends Cud
         this.cud=cud;
         if(cud.isPrimaDichiarazione())
             reader = new PdfReader(TemplateFactory.getPathNomeTemplate("120165"));
-        else if(cud.isRettifica())
+        else if(cud.isSostituzione())
             reader = new PdfReader(TemplateFactory.getPathNomeTemplate("120166"));
 
 		// Aprile 2023 (Engineering)
-		else if (cud.isAnnulla()) {
+		else if (cud.isAnnullamento()) {
 			reader = new PdfReader(TemplateFactory.getPathNomeTemplate(CudBase.CHIAVE_NOME_FILE_MODELLO_ANNULLAMENTO));
 		}
 

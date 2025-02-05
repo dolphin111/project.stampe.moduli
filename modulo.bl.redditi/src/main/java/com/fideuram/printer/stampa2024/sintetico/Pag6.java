@@ -16,7 +16,7 @@ public class Pag6 extends PaginaBase {
 
         System.out.println("***************pagina modello cud (anno " + anno + "): " + pag);
 
-        if(cud.isRettifica())         {
+        if(cud.isSostituzione())         {
         	ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("ANNULLA E SOSTITUISCE", 12), 390, 820, 0);
         }
 

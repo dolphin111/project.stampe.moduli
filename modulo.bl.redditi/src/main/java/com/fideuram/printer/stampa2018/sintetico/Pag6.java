@@ -19,12 +19,12 @@ import com.itextpdf.text.pdf.PdfStamper;
 public class Pag6 extends PaginaBase {
     public void stampa(PdfStamper stamper, Cud2018 cud, int pag) throws DocumentException {
         canvas = stamper.getOverContent(pag);
-        
-        if(cud.isRettifica())
-        { 
+
+        if(cud.isSostituzione())
+        {
         	ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("ANNULLA E SOSTITUISCE", 12), 390, 820, 0);
         }
-        
+
         propagaCF(cud,pag);
         DatiPrevidenziali dp=cud.getDatiPrevidenziali();
         List<String> annotazioni = dp.getAnnotazioni();

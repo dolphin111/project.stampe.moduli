@@ -15,16 +15,16 @@ import com.itextpdf.text.pdf.PdfStamper;
  * Date: 14/01/16
  * Time: 12.05
  */
-public class Pag4 extends PaginaBase 
+public class Pag4 extends PaginaBase
 {
     public void stampa(PdfStamper stamper, Cud2017 cud, int pag) {
         canvas = stamper.getOverContent(pag);
-        
-        if(cud.isRettifica())
-        { 
+
+        if(cud.isSostituzione())
+        {
         	ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("ANNULLA E SOSTITUISCE", 12), 390, 820, 0);
         }
-        
+
         propagaCF(cud,pag);
         DatiPrevidenziali dp=cud.getDatiPrevidenziali();
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ19().getC1()), 124, 760, 0);
@@ -67,23 +67,23 @@ public class Pag4 extends PaginaBase
       ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ20().getC33()),  128, 531, 0);
       ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ20().getC34()),  222, 531, 0);
 
-        
+
       /*  if (dp.getQ20().isT()){
             //ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase("X"), 305, 532, 0);
         }else{
             stMesi(dp.getQ20().getC36(),328, 532);
         }*/
-        
+
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ20().getC37()),  128, 495, 0);
         stMesi(dp.getQ20().getC38(),248, 496);
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ20().getC39()),  438, 495, 0);
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ20().getC40()),  128, 460, 0);
-        
+
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ21().getC41()),  128, 424, 0);
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ21().getC42()),  244, 424, 0);
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ21().getC43()),  361, 424, 0);
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ21().getC44()),  476, 424, 0);
-        
+
        /* if (dp.getQ21().isT()){
            // ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase("X"), 125, 388, 0);
         }else{
@@ -92,7 +92,7 @@ public class Pag4 extends PaginaBase
 
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ21().getC47()),  335, 388, 0);
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ21().getC48()),  378, 388, 0);
-        
+
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ22().getC49()),  128, 350, 0);
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ22().getC50()),  264, 350, 0);
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ22().getC52()),  128, 327, 0);
@@ -125,7 +125,7 @@ public class Pag4 extends PaginaBase
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ23().getC74()),  408, 257, 0);
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ23().getC75()),  476, 257, 0);
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(dp.getQ23().getC76()),  545, 257, 0);
-        
+
         GestioneSeparata g=cud.getGestioneSeparata();
         ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(g.getQ24().getC801()), 136, 196, 0);
         ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(g.getQ24().getC802()), 222, 196, 0);
@@ -146,12 +146,12 @@ public class Pag4 extends PaginaBase
 
 
     private void stMesi(char[] c,  int colonna, int riga){
-        
+
         for(int i=0;c != null && i<c.length;i++){
             ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(c[i]+""), colonna, riga, 0);
             colonna=colonna+14;
         }
     }
-    
+
 }
 

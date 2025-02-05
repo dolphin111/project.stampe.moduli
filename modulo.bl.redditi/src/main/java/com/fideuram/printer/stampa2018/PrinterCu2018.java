@@ -12,7 +12,7 @@ import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.pdf.PdfReader;
 import com.itextpdf.text.pdf.PdfStamper;
 
-public class PrinterCu2018  extends Cud 
+public class PrinterCu2018  extends Cud
 {
     protected Cud2018 cud;
     protected PdfReader reader;
@@ -24,7 +24,7 @@ public class PrinterCu2018  extends Cud
         this.cud=cud;
         if(cud.isPrimaDichiarazione())
             reader = new PdfReader(TemplateFactory.getPathNomeTemplate("120165"));
-        else if(cud.isRettifica())
+        else if(cud.isSostituzione())
             reader = new PdfReader(TemplateFactory.getPathNomeTemplate("120166"));
 
         LoggingUtils.info("Mi preparto alla stampa di " + fs + cud.getPercettoreSomme().getCf() + ".pdf");

@@ -28,7 +28,7 @@ public class PrinterCu2015 extends Cud {
         this.cud=cud;
         if(cud.isPrimaDichiarazione())
             reader = new PdfReader(TemplateFactory.getPathNomeTemplate("12021"));
-        else if(cud.isRettifica())
+        else if(cud.isSostituzione())
             reader = new PdfReader(TemplateFactory.getPathNomeTemplate("12022"));
         //else if(cud.isAnnulla())
             //reader = new PdfReader(TemplateFactory.getPathNomeTemplate("12023"));

@@ -14,9 +14,9 @@ import com.itextpdf.text.pdf.PdfStamper;
 public class Pag_RiepilogoCU extends PaginaBase {
     public void stampa(PdfStamper stamper, Cud2015 cud, int pag) {
         canvas = stamper.getOverContent(pag);
-        if(cud.isRettifica())
+        if(cud.isSostituzione())
            ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase("X"), 358, 692, 0);
-        if(cud.isAnnulla())
+        if(cud.isAnnullamento())
             ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase("X"), 178, 692, 0);
         char[] c= cud.getPercettoreSomme().getCf().toCharArray();
         int colonna=320;

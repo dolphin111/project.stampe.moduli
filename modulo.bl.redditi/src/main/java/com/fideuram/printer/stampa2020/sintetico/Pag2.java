@@ -7,21 +7,21 @@ import com.itextpdf.text.Element;
 import com.itextpdf.text.pdf.ColumnText;
 import com.itextpdf.text.pdf.PdfStamper;
 
-public class Pag2 extends PaginaBase 
+public class Pag2 extends PaginaBase
 {
     public void stampa(PdfStamper stamper, Cud2020 cud, int pag) {
-    	
+
         canvas = stamper.getOverContent(pag);//pag.4
-        
+
         int anno = 2020;
-        
+
         System.out.println("***************pagina modello cud (anno "+anno+"): " + pag);
-        
-        if(cud.isRettifica())
-        { 
+
+        if(cud.isSostituzione())
+        {
         	ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("ANNULLA E SOSTITUISCE", 12), 390, 820, 0);
         }
-        
+
         propagaCF(cud,pag);
         //DATI FISCALI
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ5().getC1()), 132, 736, 0);
@@ -49,7 +49,7 @@ public class Pag2 extends PaginaBase
         //ASS. FISC. DICH.
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ7().getC53()), 124, 580, 0);//vedere istruzioni
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ7().getC54()), 165, 580, 0);//presenza 730
-        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ7().getC55()), 165, 580, 0);//C55  
+        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ7().getC55()), 165, 580, 0);//C55
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ7().getC63()), 255, 580, 0);//saldo irpef - Non tratt
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ7().getC73()), 333, 580, 0);//addiz regionale - Non tratt
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ7().getC83()), 410, 580, 0);//saldo addiz - Non tratt
@@ -74,7 +74,7 @@ public class Pag2 extends PaginaBase
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ9().getC273()),219, 447, 0);//ADDIZ REG 		NN TR.
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ9().getC283()),304, 447, 0);//SALDO ADDIZ 	NN TR.
         ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ9().getC293()),392, 447, 0);//SALDO CED SECCA NN TR.
-        
+
 		ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ9().getC263()),132, 412, 0);//SALDO IRPEF 	NN RIMB. OK!!
 		ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ9().getC274()),219, 412, 0);//ADDIZ REG 		NN RIMB.
 		ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiFiscali().getQ9().getC284()),304, 412, 0);//SALDO ADDIZ 	NN RIMB.

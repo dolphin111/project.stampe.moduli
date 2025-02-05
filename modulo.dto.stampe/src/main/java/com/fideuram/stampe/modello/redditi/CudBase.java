@@ -20,15 +20,15 @@ import java.util.Date;
 @XmlRootElement(name="", namespace="")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class CudBase {
-    public static int PRIMA_DICHIARAZIONE     =0;
-    public static int RETTIFICA_DICHIARAZIONE =1;
-    public static int ANNULLA_DICHIARAZIONE   =2;
+    public static int PRIMA_DICHIARAZIONE  = 0;
+    public static int SOSTITUZIONE         = 1;
+    public static int ANNULLAMENTO         = 2;
 
     /** &Egrave; una chiave del file di configurazione.  */
     public static final String CHIAVE_NOME_FILE_MODELLO_ANNULLAMENTO = "12023";
 
     protected int               tipodichiarazione=0;
-    protected Date              dataEleaborazione;
+    protected Date              dataElaborazione;
     protected String            annoFiscale;
     protected SostitutoImposta  datoreLavoro;
     protected PercettoreSomme   percettoreSomme;
@@ -38,16 +38,16 @@ public class CudBase {
 
     public CudBase() {}
 
-    public boolean  isAnnulla(){
-        return tipodichiarazione==2?true:false;
+    public boolean isAnnullamento() {
+        return tipodichiarazione == 2 ? true : false;
     }
 
-    public boolean  isRettifica(){
-        return tipodichiarazione==1?true:false;
+    public boolean isSostituzione() {
+        return tipodichiarazione== 1 ? true : false;
     }
 
     public boolean isPrimaDichiarazione(){
-        return tipodichiarazione==0?true:false;
+        return tipodichiarazione == 0 ? true : false;
     }
 
     public String getAnnoFiscale() {
@@ -63,7 +63,7 @@ public class CudBase {
      * @return
      */
     public String getDataEleaborazione(String formato) {
-        return FormattatoreDate.formatDate(dataEleaborazione,formato!=null?formato:FormattatoreDate.FORMATO_DATA_dd___MM___YYYY);
+        return FormattatoreDate.formatDate(dataElaborazione,formato!=null?formato:FormattatoreDate.FORMATO_DATA_dd___MM___YYYY);
     }
 
     public String getDataEleaborazione(){return getDataEleaborazione("dd  MM   yyyy");}
@@ -92,7 +92,7 @@ public class CudBase {
         this.datoreLavoro = datoreLavoro;
     }
     public void setDataEleaborazione(Date dataEleaborazione) {
-        this.dataEleaborazione = dataEleaborazione;
+        this.dataElaborazione = dataEleaborazione;
     }
 
     /**
