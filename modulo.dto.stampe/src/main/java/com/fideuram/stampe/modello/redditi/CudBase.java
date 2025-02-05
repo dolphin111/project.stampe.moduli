@@ -40,7 +40,6 @@ public class CudBase {
 
     public boolean isAnnullamento() {
         return tipodichiarazione == 2 ? true : false;
-        return tipodichiarazione == 2 ? true : false;
     }
 
     public boolean isSostituzione() {
