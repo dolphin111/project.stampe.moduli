@@ -36,7 +36,7 @@ public class PrinterCu2025Sintetico extends PrinterCu2025 {
             // Febbraio 2024 (Engineering) (adeguata impaginazione al 2024) (INIZIO)
             // Prima copia
             new Pag1().stampa(stamper, cud, 3);//DATI ANAGRAFICI
-            new Pag2().stampa(stamper, cud, 4);//DATI FISCALI
+            new Pag2().stampa(stamper, cud, 4); // CERTIFICAZIONE LAVORO DIPENDENTE, ASSIMILATI ED ASSISTENZA FISCALE
             new Pag3().stampa(stamper, cud, 5);//PREVIDENZA COMPLEMENTARE
             new Pag4().stampa(stamper, cud, 6); // SOMME EROGATE PER PREMI DI RISULTATO IN FORZA DI CONTRATTI COLLETTIVI AZIENDALI O TERRITORIALI (ex DATI RELATIVI CONIUGE E FAMILIARI A CARICO)
             new Pag5().stampa(stamper, cud, 7); // DATI PREVIDENZIALI ED ASSISTENZIALI (ex TRATT. FINE RAPPORTO - NEW 2020)
@@ -47,7 +47,7 @@ public class PrinterCu2025Sintetico extends PrinterCu2025 {
 
             // Seconda copia
             new Pag1().stampa(stamper, cud, 14);//DATI ANAGRAFICI
-            new Pag2().stampa(stamper, cud, 15);//DATI FISCALI
+            new Pag2().stampa(stamper, cud, 15); // CERTIFICAZIONE LAVORO DIPENDENTE, ASSIMILATI ED ASSISTENZA FISCALE
             new Pag3().stampa(stamper, cud, 16);//PREVIDENZA COMPLEMENTARE
             new Pag4().stampa(stamper, cud, 17); // SOMME EROGATE PER PREMI DI RISULTATO IN FORZA DI CONTRATTI COLLETTIVI AZIENDALI O TERRITORIALI (ex DATI RELATIVI CONIUGE E FAMILIARI A CARICO)
             new Pag5().stampa(stamper, cud, 18); // DATI PREVIDENZIALI ED ASSISTENZIALI (ex TRATT. FINE RAPPORTO - NEW 2020)
