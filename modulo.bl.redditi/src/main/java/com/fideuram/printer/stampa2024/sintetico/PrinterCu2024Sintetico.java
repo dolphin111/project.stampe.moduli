@@ -30,7 +30,7 @@ public class PrinterCu2024Sintetico extends PrinterCu2024 {
     	  new Lettera().stampa(stamper, cud,1); // Lettera di accompagnamento (primo invio), sostituzione o annullamento
 
         // Aprile 2023 (Engineering) (aggiunta istruzione IF come condizione per l'annullamento, per generare solo la prima pagina)
-        if (CudBase.ANNULLAMENTO != cud.getTipoDichiarazione()) {
+        if (CudBase.TIPO_DICHIARAZIONE_ANNULLAMENTO != cud.getTipoDichiarazione()) {
             // Pagina 2: vuota
 
             // Febbraio 2024 (Engineering) (adeguata impaginazione al 2024) (INIZIO)

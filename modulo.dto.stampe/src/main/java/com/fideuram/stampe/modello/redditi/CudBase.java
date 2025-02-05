@@ -20,9 +20,9 @@ import java.util.Date;
 @XmlRootElement(name="", namespace="")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class CudBase {
-    public static int PRIMA_DICHIARAZIONE  = 0;
-    public static int SOSTITUZIONE         = 1;
-    public static int ANNULLAMENTO         = 2;
+    public static int TIPO_DICHIARAZIONE_PRIMA_DICHIARAZIONE = 0;
+    public static int TIPO_DICHIARAZIONE_SOSTITUZIONE = 1;
+    public static int TIPO_DICHIARAZIONE_ANNULLAMENTO = 2;
 
     /** &Egrave; una chiave del file di configurazione.  */
     public static final String CHIAVE_NOME_FILE_MODELLO_ANNULLAMENTO = "12023";
@@ -39,6 +39,7 @@ public class CudBase {
     public CudBase() {}
 
     public boolean isAnnullamento() {
+        return tipodichiarazione == 2 ? true : false;
         return tipodichiarazione == 2 ? true : false;
     }
 

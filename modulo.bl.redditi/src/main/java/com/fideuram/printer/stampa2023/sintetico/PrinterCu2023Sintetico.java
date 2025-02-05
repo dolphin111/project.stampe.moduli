@@ -30,7 +30,7 @@ public class PrinterCu2023Sintetico extends PrinterCu2023 {
     	  new Lettera().stampa(stamper, cud,1);//LETTERA
 
         // Aprile 2023 (Engineering) (aggiunta istruzione IF come condizione per l'annullamento, per generare solo la prima pagina)
-        if (CudBase.ANNULLAMENTO != cud.getTipoDichiarazione()) {
+        if (CudBase.TIPO_DICHIARAZIONE_ANNULLAMENTO != cud.getTipoDichiarazione()) {
             //2-pagina bianca
             new Pag1().stampa(stamper, cud, 3);//DATI ANAGRAFICI
             new Pag2().stampa(stamper, cud, 4);//DATI FISCALI
