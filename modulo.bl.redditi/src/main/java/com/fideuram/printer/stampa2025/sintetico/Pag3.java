@@ -21,115 +21,142 @@ public class Pag3 extends PaginaBase {
         	ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("ANNULLA E SOSTITUISCE", 12), 390, 820, 0);
         }
 
+        int y;
+
         propagaCF(cud,pag);
+
         //PREVIDENZA COMPLEMENTARE - NON PRESENTE NEL FILE EXCEL
-//      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ12().getC411()),120, 700, 0);
-//      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ12().getC412()),172, 700, 0);
-//      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ12().getC413()),276, 700, 0);
-//      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ12().getC414()),382, 700, 0);
-//      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ12().getC415()),492, 700, 0);
+        y = 760;
+      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ12().getC411()),121, y, 0);
+      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ12().getC412()),172, y, 0);
+      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ12().getC413()),276, y, 0);
+//      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ12().getC414()),382, y, 0);
+      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ12().getC415()),492, y, 0);
+//      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TESTC411"),121, y, 0);
+//      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TESTC412"),172, y, 0);
+//      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TESTC413"),276, y, 0);
+//      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TESTC415"),492, y, 0);
 
-//      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ12().getC416()),130, 630, 0);
-//      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ12().getC417()),232, 630, 0);
-//      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ12().getC418()),336, 630, 0);
-//      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ12().getC419()),438, 630, 0);
-//      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ12().getC420()),540, 630, 0);
+        y = 711;
+      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ12().getC416()),130, y, 0);
+      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ12().getC417()),232, y, 0);
+      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ12().getC418()),336, y, 0);
+      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ12().getC419()),438, y, 0);
+      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ12().getC420()),540, y, 0);
+//      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TESTC416"),130, y, 0);
+//      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TESTC417"),232, y, 0);
+//      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TESTC418"),336, y, 0);
+//      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TESTC419"),438, y, 0);
+//      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TESTC420"),540, y, 0);
 
-//      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ12().getC421()),130, 580, 0);
-//      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ12().getC422()),230, 580, 0);
-//      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ12().getC423()),332, 580, 0);
+        y = 675;
+      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ12().getC421()),130, y, 0);
+      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ12().getC422()),230, y, 0);
+      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ12().getC423()),332, y, 0);
+//      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TESTC421"),130, y, 0);
+//      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TESTC422"),230, y, 0);
+//      ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TESTC423"),332, y, 0);
 
       //INCAPIENZA IN SEDE DI CONGUAGLIO
 
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ14().getC455()), 131, 747, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ14().getC456()), 196, 747, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ14().getC457()), 262, 747, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ14().getC458()), 340, 747, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ14().getC459()), 420, 747, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ14().getC460()), 500, 747, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ14().getC461()), 131, 711, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ14().getC455()), 131, 747, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ14().getC456()), 196, 747, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ14().getC457()), 262, 747, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ14().getC458()), 340, 747, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ14().getC459()), 420, 747, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ14().getC460()), 500, 747, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ14().getC461()), 131, 711, 0);
 
         //ALTRI DATI
-        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ14().getC464()), 420, 555, 0);//2025 REDD. ESENTI COD.
-        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ14().getC465()), 448, 555, 0);//2025 REDD. ESENTI AMMONTARE
-        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ14().getC469()), 307, 600, 0);//2025 IRPEF DA TRATTENERE
+        y = 518;
+        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ14().getC464()), 285, y, 0);//2025 REDD. ESENTI COD.
+        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ14().getC465()), 315, y, 0);//2025 REDD. ESENTI AMMONTARE
+        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ14().getC469()), 380, y, 0);//2025 IRPEF DA TRATTENERE
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TESTC464"), 285, y, 0);//2025 REDD. ESENTI COD.
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TESTC465"), 315, y, 0);//2025 REDD. ESENTI AMMONTARE
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TESTC469"), 380, y, 0);//2025 IRPEF DA TRATTENERE
 
-        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ14().getC471()), 307, 600, 0);//2025 IRPEF DA VERSARE
+        y = 485;
+        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ14().getC471()), 130, y, 0);//2025 IRPEF DA VERSARE
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TESTC471"), 130, y, 0);//2025 IRPEF DA VERSARE
 
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ14().getC472()), 192, 711, 0);//APPL. MAGG. RITENUTA
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ14().getC473()), 380, 711, 0);//CASI PART.
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ14().getC474()), 192, 711, 0);//EROGAZ. IN NATURA
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ14().getC475()), 480,711, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ14().getC476()), 138, 688, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ14().getC477()), 176, 688, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ14().getC478()), 232, 688, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ14().getC472()), 192, 711, 0);//APPL. MAGG. RITENUTA
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ14().getC473()), 380, 711, 0);//CASI PART.
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ14().getC474()), 192, 711, 0);//EROGAZ. IN NATURA
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ14().getC475()), 480,711, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ14().getC476()), 138, 688, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ14().getC477()), 176, 688, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ14().getC478()), 232, 688, 0);
 
       	//REDDITI ASSOG. RITENUTA IMPOSTA
         // Aprile 2023 (Engineering): allineata ordinata dei campi con le caselle di testo prestampate (valore aumentato per spostare il testo in alto)
-        // ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ15().getC481()), 130, 483, 0);//2025 TOT. REDDITI
-        // ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ15().getC482()), 248, 483, 0);//2025 TOT.RITENUTE IRPEF
-        // ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ15().getC483()), 368, 483, 0);//2025 TOT. RITENUTE IRPEF SOS.
-        int y = 495;
-        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ15().getC481()), 130, y, 0);//2025 TOT. REDDITI
-        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ15().getC482()), 248, y, 0);//2025 TOT.RITENUTE IRPEF
-        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ15().getC483()), 368, y, 0);//2025 TOT. RITENUTE IRPEF SOS.
+        // ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ15().getC481()), 130, 483, 0);//2025 TOT. REDDITI
+        // ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ15().getC482()), 248, 483, 0);//2025 TOT.RITENUTE IRPEF
+        // ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ15().getC483()), 368, 483, 0);//2025 TOT. RITENUTE IRPEF SOS.
+        y = 448;
+        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ15().getC481()), 130, y, 0);//2025 TOT. REDDITI
+        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ15().getC482()), 247, y, 0);//2025 TOT.RITENUTE IRPEF
+        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ15().getC483()), 369, y, 0);//2025 TOT. RITENUTE IRPEF SOS.
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TESTC481"), 130, y, 0);//2025 TOT. REDDITI
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TESTC482"), 247, y, 0);//2025 TOT.RITENUTE IRPEF
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TESTC483"), 369, y, 0);//2025 TOT. RITENUTE IRPEF SOS.
 
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ15().getC496()), 134, 618, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ15().getC497()), 242, 618, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ15().getC498()), 364, 618, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ15().getC499()), 474, 618, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ15().getC500()), 134, 592, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ15().getC501()), 242, 592, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ16().getC511()), 134, 557, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ16().getC512()), 250, 557, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ16().getC513()), 365, 557, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ16().getC514()), 481, 557, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ15().getC496()), 134, 618, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ15().getC497()), 242, 618, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ15().getC498()), 364, 618, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ15().getC499()), 474, 618, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ15().getC500()), 134, 592, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ15().getC501()), 242, 592, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ16().getC511()), 134, 557, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ16().getC512()), 250, 557, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ16().getC513()), 365, 557, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ16().getC514()), 481, 557, 0);
 //
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ17().getC531()), 134, 507, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ17().getC532()), 226, 507, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ17().getC533()), 312, 507, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ17().getC534()), 398, 507, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ17().getC535()), 486, 507, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ17().getC536()), 134, 483, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ17().getC538()), 397, 483, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ17().getC539()), 485, 483, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ17().getC531()), 134, 507, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ17().getC532()), 226, 507, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ17().getC533()), 312, 507, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ17().getC534()), 398, 507, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ17().getC535()), 486, 507, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ17().getC536()), 134, 483, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ17().getC538()), 397, 483, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ17().getC539()), 485, 483, 0);
 //
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ17().getC540()), 131, 459, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ17().getC541()), 225, 459, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ17().getC542()), 311, 459, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ17().getC543()), 397, 459, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ17().getC540()), 131, 459, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ17().getC541()), 225, 459, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ17().getC542()), 311, 459, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ17().getC543()), 397, 459, 0);
 //
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ17().getC544()), 131, 436, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ17().getC545()), 225, 436, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ17().getC546()), 311, 436, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ17().getC544()), 131, 436, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ17().getC545()), 225, 436, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ17().getC546()), 311, 436, 0);
 //
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ17().getC561()), 131, 400, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ17().getC562()), 243, 400, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ17().getC563()), 358, 400, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ17().getC564()), 470, 400, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ17().getC561()), 131, 400, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ17().getC562()), 243, 400, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ17().getC563()), 358, 400, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ17().getC564()), 470, 400, 0);
 //
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ18().getC571()), 131, 364, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ18().getC572()), 185, 364, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ18().getC573()), 265, 364, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ18().getC574()), 345, 364, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ18().getC575()), 425, 364, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ18().getC576()), 505, 364, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ18().getC571()), 131, 364, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ18().getC572()), 185, 364, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ18().getC573()), 265, 364, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ18().getC574()), 345, 364, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ18().getC575()), 425, 364, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ18().getC576()), 505, 364, 0);
 //
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ18().getC577()), 131, 339, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ18().getC578()), 215, 339, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ18().getC579()), 290, 339, 0);
-//     //   ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ18().getC580()), 345, 347, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ18().getC581()), 131, 304, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ18().getC582()), 185, 304, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ18().getC583()), 265, 304, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ18().getC584()), 340, 304, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ18().getC577()), 131, 339, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ18().getC578()), 215, 339, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ18().getC579()), 290, 339, 0);
+//     //   ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ18().getC580()), 345, 347, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ18().getC581()), 131, 304, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ18().getC582()), 185, 304, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ18().getC583()), 265, 304, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ18().getC584()), 340, 304, 0);
 //        //Parte nuova
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ18().getC585()), 424, 304, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ18().getC586()), 498, 304, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ18().getC585()), 424, 304, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ18().getC586()), 498, 304, 0);
 //
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ18().getC587()), 131, 280, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ18().getC588()), 214, 280, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ18().getC589()), 290, 280, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ18().getC587()), 131, 280, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ18().getC588()), 214, 280, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ18().getC589()), 290, 280, 0);
 
         //FAMILIARI A CARICO
 /*        if(cud.getPercettoreSomme().hasFamiliariACarico()){
@@ -164,14 +191,12 @@ public class Pag3 extends PaginaBase {
             ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(familiariACarico.getPercDetrazioneSpettante()),384, 124, 0);
         }*/
 
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ17().getC701()), 131, 51, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ17().getC702()), 225, 51, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ17().getC703()), 297, 51, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ17().getC704()), 355, 51, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ17().getC701()), 131, 51, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ17().getC702()), 225, 51, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ17().getC703()), 297, 51, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ17().getC704()), 355, 51, 0);
 
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ17().getC705()), 132, 28, 0);
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT,  getPhrase(cud.getDatiPrevidenziali().getQ17().getC706()), 354, 28, 0);
-
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ17().getC705()), 132, 28, 0);
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiPrevidenziali().getQ17().getC706()), 354, 28, 0);
     }
-
 }
