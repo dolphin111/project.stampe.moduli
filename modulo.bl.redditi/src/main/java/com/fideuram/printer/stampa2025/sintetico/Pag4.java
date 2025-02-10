@@ -37,61 +37,78 @@ public class Pag4 extends PaginaBase
         if(cud.getPercettoreSomme().hasFamiliariACarico()){
             FamiliariACarico familiariACarico=cud.getPercettoreSomme().getFamiliariACarico();
 
-//            if(null!=familiariACarico.getConiuge()){ // FIXME
+            if(null!=familiariACarico.getConiuge()){
                 riga = 447;
-//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("X"), 138, riga, 0);
-//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(familiariACarico.getConiuge().getCf().toUpperCase()),           255, riga, 0);
-//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(familiariACarico.getConiuge().getNumeroMesiACarico()),          435, riga, 0);
-                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST_X"), 138, riga, 0);
-                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__FAMILIARI_A_CARICO__CONIUGE__CF"),           255, riga, 0);
-                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__FAMILIARI_A_CARICO__CONIUGE__NUMERO_MESI_A_CARICO"),          435, riga, 0);
-//            } if (null!=familiariACarico.getPrimoFiglio()){ // FIXME
+                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("X"), 138, riga, 0);
+                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(familiariACarico.getConiuge().getCf().toUpperCase()),           255, riga, 0);
+                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(familiariACarico.getConiuge().getNumeroMesiACarico()),          435, riga, 0);
+//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST_X"), 138, riga, 0);
+//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__FAMILIARI_A_CARICO__CONIUGE__CF"),           255, riga, 0);
+//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__FAMILIARI_A_CARICO__CONIUGE__NUMERO_MESI_A_CARICO"),          435, riga, 0);
+//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("T01"), 138, riga, 0);
+//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("T02"),           255, riga, 0);
+//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("T03"),          435, riga, 0);
+            } if (null!=familiariACarico.getPrimoFiglio()){
                 riga = 435;
-//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(familiariACarico.getPrimoFiglio().isFiglio()),                  138, riga, 0);
-//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(familiariACarico.getPrimoFiglio().getCf().toUpperCase()),       255, riga, 0);
-//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(familiariACarico.getPrimoFiglio().getNumeroMesiACarico()),      435, riga, 0);
-//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(familiariACarico.getPrimoFiglio().getMinoreAnni3()),            470, riga, 0);
-//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(familiariACarico.getPrimoFiglio().getDetrazPercSpettante()),    505, riga, 0);
-//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(familiariACarico.getPrimoFiglio().getDetrazTotaleAffidamento()),540, riga, 0);
-                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__FAM__IS_F"),                  138, riga, 0);
-                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__FAM__CF"),       255, riga, 0);
-                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__FAM__NUM"),      435, riga, 0);
-                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__FAM__MIN"),            470, riga, 0);
-                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__FAM__SPET"),    505, riga, 0);
-                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__FAM__AFFID"),540, riga, 0);
-//            }
+                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(familiariACarico.getPrimoFiglio().isFiglio()),                  138, riga, 0);
+                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(familiariACarico.getPrimoFiglio().getCf().toUpperCase()),       255, riga, 0);
+                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(familiariACarico.getPrimoFiglio().getNumeroMesiACarico()),      435, riga, 0);
+                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(familiariACarico.getPrimoFiglio().getMinoreAnni3()),            470, riga, 0);
+                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(familiariACarico.getPrimoFiglio().getDetrazPercSpettante()),    505, riga, 0);
+                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(familiariACarico.getPrimoFiglio().getDetrazTotaleAffidamento()),540, riga, 0);
+//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__FAM__IS_F"),                  138, riga, 0);
+//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__FAM__CF"),       255, riga, 0);
+//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__FAM__NUM"),      435, riga, 0);
+//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__FAM__MIN"),            470, riga, 0);
+//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__FAM__SPET"),    505, riga, 0);
+//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__FAM__AFFID"),540, riga, 0);
+//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("T04"),                  138, riga, 0);
+//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("T05"),       255, riga, 0);
+//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("T06"),      435, riga, 0);
+//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("T07"),            470, riga, 0);
+//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("T08"),    505, riga, 0);
+//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("T09"),540, riga, 0);
+            }
 
             riga=435-12;
-//             for(int i=0;i<familiariACarico.getAltri().size();i++){
-            for(int i =1 ;i <= 10 ; i += 1){
-//                Familiare f = familiariACarico.getAltri().get(i);
+             for(int i=0;i<familiariACarico.getAltri().size();i++){
+//            for(int i =1 ;i <= 7 ; i += 1){
+                Familiare f = familiariACarico.getAltri().get(i);
 //                System.out.println("***************Familiari a carico - modello cud (anno "+anno+") - f: " + f.getCf() + " , " + f.isFiglio());
 //                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(f.isFiglio()),                  138, riga, 0);
 //                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(f.isAltroFamiliare()),          173, riga, 0);
-//                if (f.isFiglio().equals("F")) { // FIXME
-                	// ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(f.isFiglio()),                  138, riga, 0);
-                	ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__IS_FIGLIO"),                  138, riga, 0);
-//                } else if (f.isFiglio().equals("A")) { // FIXME
-                	// ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(f.isAltroFamiliare()),          173, riga, 0);
-                	ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__IS_ALTRO_FAMILIARE"),          173, riga, 0);
-//                }
-//                System.out.println("***************Familiari a carico - modello cud (anno "+anno+") - f: " + f.getCf() + " , " + f.isFiglio()); // FIXME
+                if (f.isFiglio().equals("F")) {
+                	 ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(f.isFiglio()),                  138, riga, 0);
+//                	ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__IS_FIGLIO"),                  138, riga, 0);
+//                	ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("T10"),                  138, riga, 0);
+                } else if (f.isFiglio().equals("A")) {
+                	 ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(f.isAltroFamiliare()),          173, riga, 0);
+//                	ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__IS_ALTRO_FAMILIARE"),          173, riga, 0);
+//                	ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("T11"),          173, riga, 0);
+                }
+                System.out.println("***************Familiari a carico - modello cud (anno "+anno+") - f: " + f.getCf() + " , " + f.isFiglio());
 //                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(f.isDisabile()),                212, riga, 0);
 //                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(f.getCf().toUpperCase()),       255, riga, 0);
 //                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(f.getNumeroMesiACarico()),      435, riga, 0);
 //                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(f.getMinoreAnni3()),            470, riga, 0);
 //                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(f.getDetrazPercSpettante()),    505, riga, 0);
 //                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(f.getDetrazTotaleAffidamento()),540, riga, 0);
-                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__F__IS_D"),                212, riga, 0);
-                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__F__CF"),       255, riga, 0);
-                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__F__NUM"),      435, riga, 0);
-                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__F__MIN"),            470, riga, 0);
-                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__F__SPET"),    505, riga, 0);
-                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__F__AFFID"),540, riga, 0);
-                riga=riga-12;
+//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__F__IS_D"),                212, riga, 0);
+//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__F__CF"),       255, riga, 0);
+//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__F__NUM"),      435, riga, 0);
+//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__F__MIN"),            470, riga, 0);
+//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__F__SPET"),    505, riga, 0);
+//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__F__AFFID"),540, riga, 0);
+//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("T12"),                212, riga, 0);
+//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("T13"),       255, riga, 0);
+//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("T14"),      435, riga, 0);
+//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("T15"),            470, riga, 0);
+//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("T16"),    505, riga, 0);
+//                ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("T17"),540, riga, 0);
+
+                riga -= 12;
             }
-            // ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(familiariACarico.getPercDetrazioneSpettante()),384, 643, 0);
-            ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TEST__FAMILIARI_A_CARICO__PERC_DETRAZIONE_SPETTANTE"),384, 327, 0);
+            // ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(familiariACarico.getPercDetrazioneSpettante()),384, 643, 0); // Probabilmente trattavasi del campo "Percentuale di detrazione spettante per famiglie numerose" non presente nella CU 2025
         }
         /*GIO:::*/
 
