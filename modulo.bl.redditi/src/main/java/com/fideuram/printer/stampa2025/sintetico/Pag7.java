@@ -38,6 +38,11 @@ public class Pag7 extends PaginaBase {
 
         String stringone="";
 
+//         annotazioni.add("TEST RIGA 1");
+//         annotazioni.add("TEST RIGA 2");
+//         annotazioni.add("TEST RIGA 3");
+//         annotazioni.add("TEST RIGA 4");
+
         for(int i=0;i<annotazioni.size();i++){
             stringone=stringone+annotazioni.get(i)+"\n\n";
 //            System.out.println("ANNOTAZIONI ---> stringone: " + stringone + " (" + i +")");
