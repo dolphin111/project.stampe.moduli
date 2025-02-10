@@ -27,39 +27,39 @@ public class Pag6 extends PaginaBase {
 
         // prima riga
         y = 569;
-//        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(g.getQ24().getC801()), 136, y, 0);	//2021	-	Indennita', acconti, anticipazioni e somme erogate nell'anno
-//        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(g.getQ24().getC802()), 222, y, 0);	//2021	-	Acconti ed anticipazioni erogate anni prec.
-//        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(g.getQ24().getC803()), 308, y, 0);	//2021	-	Detrazione
-//        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(g.getQ24().getC804()), 394, y, 0);	//2021	-	Ritenuta netta operata nell'anno
-//        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(g.getQ24().getC805()), 480, y, 0);	//2021	-	Ritenute sspese
-        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("TEST_801"), 136, y, 0);	//2021	-	Indennita', acconti, anticipazioni e somme erogate nell'anno
-        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("TEST_802"), 222, y, 0);	//2021	-	Acconti ed anticipazioni erogate anni prec.
-        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("TEST_803"), 308, y, 0);	//2021	-	Detrazione
-        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("TEST_804"), 394, y, 0);	//2021	-	Ritenuta netta operata nell'anno
-        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("TEST_805"), 480, y, 0);	//2021	-	Ritenute sspese
+        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(g.getQ24().getC801()), 136, y, 0);	//2021	-	Indennita', acconti, anticipazioni e somme erogate nell'anno
+        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(g.getQ24().getC802()), 222, y, 0);	//2021	-	Acconti ed anticipazioni erogate anni prec.
+        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(g.getQ24().getC803()), 308, y, 0);	//2021	-	Detrazione
+        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(g.getQ24().getC804()), 394, y, 0);	//2021	-	Ritenuta netta operata nell'anno
+        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(g.getQ24().getC805()), 480, y, 0);	//2021	-	Ritenute sspese
+//        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("TEST_801"), 136, y, 0);	//2021	-	Indennita', acconti, anticipazioni e somme erogate nell'anno
+//        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("TEST_802"), 222, y, 0);	//2021	-	Acconti ed anticipazioni erogate anni prec.
+//        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("TEST_803"), 308, y, 0);	//2021	-	Detrazione
+//        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("TEST_804"), 394, y, 0);	//2021	-	Ritenuta netta operata nell'anno
+//        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("TEST_805"), 480, y, 0);	//2021	-	Ritenute sspese
 
         // seconda riga
         y = 545;
-//        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(g.getQ24().getC806()), 136, y, 0);
-//        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(g.getQ24().getC807()), 222, y, 0);
-//        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(g.getQ24().getC808()), 308, y, 0);	//2021	-	Quota spettante per le indennita' erogate ai sensi dell'art.2122 c.c.
-//        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(g.getQ24().getC809()), 394, y, 0);
-//        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(g.getQ24().getC810()), 480, y, 0);
-        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("TEST_806"), 136, y, 0);
-        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("TEST_807"), 222, y, 0);
-        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("TEST_808"), 308, y, 0);	//2021	-	Quota spettante per le indennita' erogate ai sensi dell'art.2122 c.c.
-        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("TEST_809"), 394, y, 0);
-        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("TEST_810"), 480, y, 0);
+        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(g.getQ24().getC806()), 136, y, 0);
+        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(g.getQ24().getC807()), 222, y, 0);
+        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(g.getQ24().getC808()), 308, y, 0);	//2021	-	Quota spettante per le indennita' erogate ai sensi dell'art.2122 c.c.
+        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(g.getQ24().getC809()), 394, y, 0);
+        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(g.getQ24().getC810()), 480, y, 0);
+//        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("TEST_806"), 136, y, 0);
+//        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("TEST_807"), 222, y, 0);
+//        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("TEST_808"), 308, y, 0);	//2021	-	Quota spettante per le indennita' erogate ai sensi dell'art.2122 c.c.
+//        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("TEST_809"), 394, y, 0);
+//        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("TEST_810"), 480, y, 0);
 
         // terza riga
         y = 522;
-//        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(g.getQ24().getC811()), 136, y, 0);
-//        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(g.getQ24().getC812()), 222, y, 0);
-//        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(g.getQ24().getC813()), 308, y, 0);
-//        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(g.getQ24().getC920()), 394, y, 0);
-        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("TEST_811"), 136, y, 0);
-        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("TEST_812"), 222, y, 0);
-        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("TEST_813"), 308, y, 0);
-        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("TEST_920"), 394, y, 0);
+        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(g.getQ24().getC811()), 136, y, 0);
+        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(g.getQ24().getC812()), 222, y, 0);
+        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(g.getQ24().getC813()), 308, y, 0);
+        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase(g.getQ24().getC920()), 394, y, 0);
+//        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("TEST_811"), 136, y, 0);
+//        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("TEST_812"), 222, y, 0);
+//        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("TEST_813"), 308, y, 0);
+//        ColumnText.showTextAligned(canvas, Element.ALIGN_LEFT, getPhrase("TEST_920"), 394, y, 0);
     }
 }
