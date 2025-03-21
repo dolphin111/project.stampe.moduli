@@ -45,16 +45,21 @@ public class PrinterCu2025Sintetico extends PrinterCu2025 {
             new Pag8().stampa(stamper, cud, 10);//CERTIFICAZIONE LAVORO AUTONOMO, PROVVIGIONI E REDDITI DIVERSI
             new Pag9().stampa(stamper, cud, 11);//CERTIFICAZIONE REDDITI - LOCAZIONI BREVI
 
+            /*
+             * Pagina 14: ora dev'essere vuota (e-mail del 20/02/2025, 15:07, oggetto "R: Convalida testi CU 2025");
+             * spostati conseguentemente in avanti di una unita' tutti i riferimenti delle pagine successive
+             */
+
             // Seconda copia
-            new Pag1().stampa(stamper, cud, 14);//DATI ANAGRAFICI
-            new Pag2().stampa(stamper, cud, 15); // CERTIFICAZIONE LAVORO DIPENDENTE, ASSIMILATI ED ASSISTENZA FISCALE
-            new Pag3().stampa(stamper, cud, 16);//PREVIDENZA COMPLEMENTARE
-            new Pag4().stampa(stamper, cud, 17); // SOMME EROGATE PER PREMI DI RISULTATO IN FORZA DI CONTRATTI COLLETTIVI AZIENDALI O TERRITORIALI (ex DATI RELATIVI CONIUGE E FAMILIARI A CARICO)
-            new Pag5().stampa(stamper, cud, 18); // DATI PREVIDENZIALI ED ASSISTENZIALI (ex TRATT. FINE RAPPORTO - NEW 2020)
-            new Pag6().stampa(stamper, cud, 19); // Pagina 8 (SEZIONE 4  INPS SOCI COOPERATIVE ARTIGIANE)
-            new Pag7().stampa(stamper, cud, 20);//ANNOTAZIONI
-            new Pag8().stampa(stamper, cud, 21);//CERTIFICAZIONE LAVORO AUTONOMO, PROVVIGIONI E REDDITI DIVERSI
-            new Pag9().stampa(stamper, cud, 22);//CERTIFICAZIONE REDDITI - LOCAZIONI BREVI
+            new Pag1().stampa(stamper, cud, 15);//DATI ANAGRAFICI
+            new Pag2().stampa(stamper, cud, 16); // CERTIFICAZIONE LAVORO DIPENDENTE, ASSIMILATI ED ASSISTENZA FISCALE
+            new Pag3().stampa(stamper, cud, 17);//PREVIDENZA COMPLEMENTARE
+            new Pag4().stampa(stamper, cud, 18); // SOMME EROGATE PER PREMI DI RISULTATO IN FORZA DI CONTRATTI COLLETTIVI AZIENDALI O TERRITORIALI (ex DATI RELATIVI CONIUGE E FAMILIARI A CARICO)
+            new Pag5().stampa(stamper, cud, 19); // DATI PREVIDENZIALI ED ASSISTENZIALI (ex TRATT. FINE RAPPORTO - NEW 2020)
+            new Pag6().stampa(stamper, cud, 20); // Pagina 8 (SEZIONE 4  INPS SOCI COOPERATIVE ARTIGIANE)
+            new Pag7().stampa(stamper, cud, 21);//ANNOTAZIONI
+            new Pag8().stampa(stamper, cud, 22);//CERTIFICAZIONE LAVORO AUTONOMO, PROVVIGIONI E REDDITI DIVERSI
+            new Pag9().stampa(stamper, cud, 23);//CERTIFICAZIONE REDDITI - LOCAZIONI BREVI
             // Febbraio 2024 (Engineering) (adeguata impaginazione al 2024) (FINE)
         } // Aprile 2023 (Engineering)
 
