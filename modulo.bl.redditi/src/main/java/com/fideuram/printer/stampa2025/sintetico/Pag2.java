@@ -229,20 +229,19 @@ public class Pag2 extends PaginaBase
         System.out.println(new Exception().getStackTrace()[0] + ": cud.getDatiFiscali().getQ10().getC351() = " + cud.getDatiFiscali().getQ10().getC351());
 
 
-        //DETRAZIONI E CREDITI
+        // DETRAZIONI E CREDITI
         // Febbraio 2024 (Engineering): allineate coordinate dei campi con le caselle di testo prestampate
 //        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiFiscali().getQ11().getC361()),131, 245, 0);//2025 IMPOSTA LORDA
 //        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiFiscali().getQ11().getC362()),246, 245, 0);//2025 DETRAZ CARICHI FAM
 //        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiFiscali().getQ11().getC363()),356, 245, 0);//2025 DETRAZ FAM NUM
 //        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiFiscali().getQ11().getC364()),472, 245, 0);//2025 CREDITO RIC FAM NUM
         y = 234;
-        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiFiscali().getQ11().getC361()), 132, y, 0);//2025 IMPOSTA LORDA
-        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiFiscali().getQ11().getC362()), 247, y, 0);//2025 DETRAZ CARICHI FAM
-        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiFiscali().getQ11().getC363()), 362, y, 0);//2025 DETRAZ FAM NUM
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiFiscali().getQ11().getC364()), 472, y, 0);//2025 CREDITO RIC FAM NUM
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TESTC361"), 132, y, 0);//2025 IMPOSTA LORDA
+        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiFiscali().getQ11().getC361()), 132, y, 0); // Imposta lorda
+        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiFiscali().getQ11().getC362()), 247, y, 0); // Detrazioni per carichi di famiglia
+        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiFiscali().getQ11().getC367()), 362, y, 0); // Detrazioni per lavoro dipendente, pensioni e redditi assimilati
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TESTC361"), 132, y, 0);
 //        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TESTC362"), 247, y, 0);//2025 DETRAZ CARICHI FAM
-//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TESTC363"), 362, y, 0);//2025 DETRAZ FAM NUM
+//        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase("TESTC367"), 362, y, 0);//2025 DETRAZ FAM NUM
 
 //        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiFiscali().getQ11().getC365()),131, 220, 0);//2025
 //        ColumnText.showTextAligned(canvas,Element.ALIGN_LEFT, getPhrase(cud.getDatiFiscali().getQ11().getC366()),244, 220, 0);//2025
